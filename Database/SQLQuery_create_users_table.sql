@@ -1,0 +1,1 @@
+create table users(username varchar(200) primary key not null,pass_word varchar(300) not null)

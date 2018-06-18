@@ -1,0 +1,1 @@
+select p.id,p.name,p.barcode,p.price,p.img,c.name as cat from products p inner join Categories c on c.id=p.cat_id

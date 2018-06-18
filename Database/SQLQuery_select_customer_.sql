@@ -1,0 +1,1 @@
+select c.id,c.name,c.email,c.phone from customer c

@@ -1,0 +1,1 @@
+select * from the_order t inner join Ordre_details o on o.order_id = t.id

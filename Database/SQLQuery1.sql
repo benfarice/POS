@@ -1,0 +1,1 @@
+select isnull(count(*),0) as have_account from users s where s.username = '' and s.pass_word = ''

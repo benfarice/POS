@@ -1,0 +1,1 @@
+select * from employe e where e.id = 1 and e.pass_word = ''

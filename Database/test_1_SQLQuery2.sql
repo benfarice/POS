@@ -1,0 +1,1 @@
+select p.name,p.price from products p where p.id = 1

@@ -1,0 +1,1 @@
+select p.id as ID,p.name as Produit,p.price as Prix,d.Quantite as Quantité,(p.price * d.Quantite) as Total,d.options as Options from the_order o inner join Ordre_details d on o.id = d.order_id inner join products p on p.id = d.product_id where order_id = -1

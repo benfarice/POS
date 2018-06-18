@@ -1,0 +1,1 @@
+insert into users(username,pass_word) values('youssef','456')

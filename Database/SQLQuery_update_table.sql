@@ -1,0 +1,1 @@
+update restaurant_table set dispo_status = 1 where id = 0 

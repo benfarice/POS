@@ -1,0 +1,1 @@
+update products set img = (select img from products i where i.id = 1076)
