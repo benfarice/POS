@@ -1,0 +1,1 @@
+insert into TransactionItem(TransctionID,ProductID) values(1,1)

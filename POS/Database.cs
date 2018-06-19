@@ -232,7 +232,7 @@ namespace POS
                     command2.Parameters.Add("@phone", SqlDbType.VarChar);
                     command2.Parameters["@phone"].Value = phone;
                     id_customer = (int)command2.ExecuteScalar();
-                    MessageBox.Show(id_customer.ToString());
+                    //MessageBox.Show(id_customer.ToString());
                 }
                 catch(Exception u)
                 {
@@ -425,6 +425,53 @@ namespace POS
            
             
             return is_updated;
+        }
+
+
+        public static Boolean save_transaction(ArrayList les_orders)
+        {
+            Boolean is_saved = true;
+            if (les_orders.Count < 1)
+            {
+                is_saved = false;
+                MessageBox.Show("Data Empty");
+            }
+            else
+            {
+                connecter();
+                string query_A = "insert into Transactions(TransactionDate) output INSERTED.transactionID values(@d)";
+
+                SqlCommand command = new SqlCommand(query_A, con);
+
+                command.Parameters.Add("@d", SqlDbType.Date);
+                command.Parameters["@d"].Value = DateTime.Now;
+                int id_transaction = (int)command.ExecuteScalar();
+                if (id_transaction < 1)
+                {
+                    is_saved = false;
+                }
+                foreach (Class_order o in les_orders)
+                {
+                    string query_B = "insert into TransactionItem(TransctionID,ProductID) values(@id_t,@id_p)";
+
+                    SqlCommand command_B = new SqlCommand(query_B, con);
+
+                    command_B.Parameters.Add("@id_p", SqlDbType.Int);
+                    command_B.Parameters["@id_p"].Value = o.id_produit;
+                    command_B.Parameters.Add("@id_t", SqlDbType.Int);
+                    command_B.Parameters["@id_t"].Value = id_transaction;
+
+                    int x = command_B.ExecuteNonQuery();
+                    if (x < 1)
+                    {
+                        is_saved = false;
+                    }
+                }
+
+
+                disconnect();
+            }
+            return is_saved;
         }
     }
 }

@@ -388,53 +388,58 @@ namespace POS
             }
             // identify which button was clicked and perform necessary actions
         }
-        public void qte_change(object sender, EventArgs e)
+        public void qte_change(object sender, KeyEventArgs e)
         {
-            //MessageBox.Show("yeah");
-            MetroFramework.Controls.MetroTextBox mytextbox = sender as MetroFramework.Controls.MetroTextBox;
-            Boolean need_refresh = true;
-            foreach (Control c in mytextbox.Parent.Parent.Controls)
+
+            if (e.KeyCode == Keys.Enter)
             {
-               //MessageBox.Show(c.Name);
-               if(c.Name == "id")
-               {
-                    foreach (Class_order order_y in list_des_orders)
+                //MessageBox.Show("yeah");
+                MetroFramework.Controls.MetroTextBox mytextbox = sender as MetroFramework.Controls.MetroTextBox;
+                Boolean need_refresh = true;
+                foreach (Control c in mytextbox.Parent.Parent.Controls)
+                {
+                    //MessageBox.Show(c.Name);
+                    if (c.Name == "id")
                     {
-                        //MessageBox.Show(order_y.id_produit.ToString());
-                        //MessageBox.Show(c.Text);
-                        if(order_y.id_produit.ToString() == c.Text)
+                        foreach (Class_order order_y in list_des_orders)
                         {
-                            try
+                            //MessageBox.Show(order_y.id_produit.ToString());
+                            //MessageBox.Show(c.Text);
+                            if (order_y.id_produit.ToString() == c.Text)
                             {
-                                if(mytextbox.Text == "")
+                                try
                                 {
-                                    need_refresh = false;
-                                    order_y.Qte = 1;
+                                    if (mytextbox.Text == "")
+                                    {
+                                        need_refresh = false;
+                                        order_y.Qte = 1;
+                                    }
+                                    else
+                                    {
+                                        order_y.Qte = float.Parse(mytextbox.Text);
+                                    }
+
                                 }
-                                else
+                                catch (Exception i)
                                 {
-                                    order_y.Qte = float.Parse(mytextbox.Text);
+                                    MessageBox.Show(i.ToString());
                                 }
-                                
+
                             }
-                            catch(Exception i)
-                            {
-                                MessageBox.Show(i.ToString());
-                            }
-                            
                         }
                     }
+                    else
+                    {
+                        //MessageBox.Show("you did not find me");
+                    }
                 }
-                else
+                if (need_refresh)
                 {
-                    //MessageBox.Show("you did not find me");
+                    refresh_orders_list();
+
                 }
             }
-            if (need_refresh)
-            {
-                refresh_orders_list();
-                
-            }
+           
             
             // identify which button was clicked and perform necessary actions
         }
@@ -735,7 +740,7 @@ namespace POS
 
 
             //Quantite_title.Leave += new EventHandler(qte_change);
-            Quantite_title.TextChanged += new EventHandler(qte_change);
+            Quantite_title.KeyDown += new  KeyEventHandler(qte_change);
             
 
             Quantite_title.Font = new Font("Arial", 9, FontStyle.Bold);
@@ -754,7 +759,7 @@ namespace POS
             };
             try
             {
-                Total_title.Text = (order.price * order.Qte).ToString();
+                Total_title.Text = (order.price * order.Qte).ToString()+" DH ";
             }
             catch (Exception t)
             {
@@ -985,10 +990,20 @@ namespace POS
                 {
                    
                     add_order_to_database();
+                    
+                    //redirect to payment form
+                    Form_payment_methodes f = new Form_payment_methodes();
+                  
+                    f.total_amount = decimal.Parse(total_money.ToString());
+                    f.orders_List = list_des_orders;
+
                     list_des_orders = new ArrayList();
                     selected_customer = new Class_customer();
                     selected_table = new Class_restaurant_table();
-                    //redirect to payment form
+                    //MessageBox.Show(total_money.ToString());
+                    //MessageBox.Show(f.total_amount.ToString());
+                    //f.Show();
+                    f.ShowDialog();
                 }
                 else
                 {
@@ -1117,6 +1132,11 @@ namespace POS
             Form_Home f = new Form_Home();
             f.Show();
             this.Close();
+        }
+
+        private void metroTextBox_Recherche_KeyDown(object sender, KeyEventArgs e)
+        {
+
         }
     }
 }

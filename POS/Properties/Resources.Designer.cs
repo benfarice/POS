@@ -103,6 +103,16 @@ namespace POS.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cheque {
+            get {
+                object obj = ResourceManager.GetObject("cheque", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap coffee_shop {
             get {
                 object obj = ResourceManager.GetObject("coffee-shop", resourceCulture);
@@ -116,6 +126,16 @@ namespace POS.Properties {
         internal static System.Drawing.Bitmap coffee_shop__1_ {
             get {
                 object obj = ResourceManager.GetObject("coffee-shop (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap credit_card {
+            get {
+                object obj = ResourceManager.GetObject("credit-card", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +206,16 @@ namespace POS.Properties {
         internal static System.Drawing.Bitmap logo_res {
             get {
                 object obj = ResourceManager.GetObject("logo-res", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap money {
+            get {
+                object obj = ResourceManager.GetObject("money", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

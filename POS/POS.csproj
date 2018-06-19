@@ -110,6 +110,18 @@
     <Compile Include="Form_Pay.Designer.cs">
       <DependentUpon>Form_Pay.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_payment_cash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_payment_cash.Designer.cs">
+      <DependentUpon>Form_payment_cash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_payment_methodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_payment_methodes.Designer.cs">
+      <DependentUpon>Form_payment_methodes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_settings_products.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +158,12 @@
     <EmbeddedResource Include="Form_Pay.resx">
       <DependentUpon>Form_Pay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_payment_cash.resx">
+      <DependentUpon>Form_payment_cash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_payment_methodes.resx">
+      <DependentUpon>Form_payment_methodes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_settings_products.resx">
       <DependentUpon>Form_settings_products.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,6 +196,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\images\settings.png" />
+    <None Include="bin\images\credit-card.png" />
+    <None Include="bin\images\cheque.png" />
+    <None Include="bin\images\money.png" />
     <Content Include="MetroFramework.txt" />
     <None Include="Resources\excel.png" />
     <None Include="Resources\shopping-basket.png" />
