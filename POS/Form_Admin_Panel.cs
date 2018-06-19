@@ -33,5 +33,11 @@ namespace POS
             Form_view_all_products f = new Form_view_all_products();
             f.Show();
         }
+
+        private void pictureBox_setting_products_btn_Click(object sender, EventArgs e)
+        {
+            Form_settings_products f = new Form_settings_products();
+            f.Show();
+        }
     }
 }

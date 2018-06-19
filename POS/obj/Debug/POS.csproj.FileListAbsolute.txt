@@ -54,3 +54,4 @@ D:\POS\POS\bin\Debug\PrinterUtility.dll
 D:\POS\POS\obj\Debug\POS.Form_add_product.resources
 D:\POS\POS\obj\Debug\POS.Form_Admin_Panel.resources
 D:\POS\POS\obj\Debug\POS.Form_view_all_products.resources
+D:\POS\POS\obj\Debug\POS.Form_settings_products.resources

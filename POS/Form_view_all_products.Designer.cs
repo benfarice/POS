@@ -30,6 +30,7 @@
         {
             this.dataGridView_all_products = new System.Windows.Forms.DataGridView();
             this.metroComboBox_filter = new MetroFramework.Controls.MetroComboBox();
+            this.metroButton_tous = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_all_products)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,12 +54,23 @@
             this.metroComboBox_filter.Name = "metroComboBox_filter";
             this.metroComboBox_filter.Size = new System.Drawing.Size(319, 29);
             this.metroComboBox_filter.TabIndex = 1;
+            this.metroComboBox_filter.SelectionChangeCommitted += new System.EventHandler(this.metroComboBox_filter_SelectionChangeCommitted);
+            // 
+            // metroButton_tous
+            // 
+            this.metroButton_tous.Location = new System.Drawing.Point(357, 397);
+            this.metroButton_tous.Name = "metroButton_tous";
+            this.metroButton_tous.Size = new System.Drawing.Size(160, 29);
+            this.metroButton_tous.TabIndex = 2;
+            this.metroButton_tous.Text = "Tous";
+            this.metroButton_tous.Click += new System.EventHandler(this.metroButton_tous_Click);
             // 
             // Form_view_all_products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.metroButton_tous);
             this.Controls.Add(this.metroComboBox_filter);
             this.Controls.Add(this.dataGridView_all_products);
             this.Name = "Form_view_all_products";
@@ -73,5 +85,6 @@
 
         private System.Windows.Forms.DataGridView dataGridView_all_products;
         private MetroFramework.Controls.MetroComboBox metroComboBox_filter;
+        private MetroFramework.Controls.MetroButton metroButton_tous;
     }
 }

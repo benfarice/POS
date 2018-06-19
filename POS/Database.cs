@@ -320,7 +320,48 @@ namespace POS
             disconnect();
             return t;
         }
-       public static Boolean save_new_product(Class_product p)
+        public static Class_product get_products_by_id(int id)
+        {
+            Class_product t = new Class_product();
+            try
+            {
+                
+                connecter();
+                string query = "select p.name as Nom,p.barcode as BareCode,p.price as Prix,p.img as Image,p.cat_id as Catégorie from products p where id = @id";
+
+                SqlCommand command = new SqlCommand(query, con);
+                command.Parameters.Add("@id", SqlDbType.Int);
+                command.Parameters["@id"].Value = id;
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    t.name = reader[0].ToString();
+                    t.barcode = reader[1].ToString();
+                    t.price = float.Parse(reader[2].ToString());
+                    t.image = reader[3];
+                    t.category = int.Parse(reader[4].ToString());
+                }
+                disconnect();
+            }
+            catch(Exception et)
+            {
+                MessageBox.Show(et.ToString());
+            }
+           
+            return t;
+        }
+        public static DataTable get_products_by_cat(int cat_id)
+        {
+            DataTable t = new DataTable();
+            connecter();
+            string query = "select p.name as Nom,p.barcode as BareCode,p.price as Prix,p.img as Image,c.name as Catégorie from products p inner join Categories c on c.id=p.cat_id where p.cat_id = "+cat_id;
+            SqlCommand command = new SqlCommand(query, con);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            adapter.Fill(t);
+            disconnect();
+            return t;
+        }
+        public static Boolean save_new_product(Class_product p)
        {
             Boolean is_saved = true;
             connecter();
@@ -352,5 +393,38 @@ namespace POS
             disconnect();
             return is_saved;
        }
+
+        public static Boolean update_product_by_id(int id,Class_product p)
+        {
+            Boolean is_updated = true;
+            try
+            {
+                string query = @"update products set name = @n ,barcode =@b,price = @p,img = @i ,cat_id = @c
+                 where id = @id";
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.Parameters.AddWithValue("@i", SqlDbType.Image).Value = p.image;
+                cmd.Parameters.Add("@n", SqlDbType.VarChar);
+                cmd.Parameters["@n"].Value = p.name;
+                cmd.Parameters.Add("@b", SqlDbType.VarChar);
+                cmd.Parameters["@b"].Value = p.barcode;
+                cmd.Parameters.Add("@c", SqlDbType.Int);
+                cmd.Parameters["@c"].Value = p.category;
+                cmd.Parameters.Add("@p", SqlDbType.Float);
+                cmd.Parameters["@p"].Value = p.price;
+                cmd.Parameters.Add("@id", SqlDbType.Int);
+                cmd.Parameters["@id"].Value = id;
+                int i = cmd.ExecuteNonQuery();
+                if (i == -1)
+                {
+                    is_updated = false;
+                }
+            }catch(Exception r)
+            {
+                MessageBox.Show(r.ToString());
+            }
+           
+            
+            return is_updated;
+        }
     }
 }

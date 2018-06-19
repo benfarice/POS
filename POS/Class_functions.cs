@@ -44,6 +44,23 @@ namespace POS
             }
             return null; //not found
         }
+
+
+        public static void empty_control(Control i)
+        {
+            List<Control> listControls = new List<Control>();
+
+            foreach (Control control in i.Controls)
+            {
+                listControls.Add(control);
+            }
+
+            foreach (Control control in listControls)
+            {
+                i.Controls.Remove(control);
+                control.Dispose();
+            }
+        }
       
 
     }
