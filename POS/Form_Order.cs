@@ -308,6 +308,7 @@ namespace POS
                     PictureBox img = new PictureBox();
                     img.Image = Image.FromStream(mem);
                     img.Size = new System.Drawing.Size(64, 64);
+                    img.Location = new Point(15, 0);
                     img.SizeMode = PictureBoxSizeMode.StretchImage;
                     img.Click += new EventHandler(img_Click);
                     v.Controls.Add(img);

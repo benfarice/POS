@@ -33,16 +33,18 @@
             // 
             // flowLayoutPanel_list_des_orders_non_payee
             // 
-            this.flowLayoutPanel_list_des_orders_non_payee.Location = new System.Drawing.Point(23, 63);
+            this.flowLayoutPanel_list_des_orders_non_payee.AutoScroll = true;
+            this.flowLayoutPanel_list_des_orders_non_payee.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel_list_des_orders_non_payee.Location = new System.Drawing.Point(20, 60);
             this.flowLayoutPanel_list_des_orders_non_payee.Name = "flowLayoutPanel_list_des_orders_non_payee";
-            this.flowLayoutPanel_list_des_orders_non_payee.Size = new System.Drawing.Size(640, 100);
+            this.flowLayoutPanel_list_des_orders_non_payee.Size = new System.Drawing.Size(645, 303);
             this.flowLayoutPanel_list_des_orders_non_payee.TabIndex = 0;
             // 
             // Form_Pay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(950, 640);
+            this.ClientSize = new System.Drawing.Size(685, 383);
             this.Controls.Add(this.flowLayoutPanel_list_des_orders_non_payee);
             this.Name = "Form_Pay";
             this.Text = "Paiement";

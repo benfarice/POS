@@ -38,8 +38,13 @@
             this.pictureBox_view_all_products_btn = new System.Windows.Forms.PictureBox();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox_view_products = new System.Windows.Forms.PictureBox();
-            this.metroTabControl_produits = new MetroFramework.Controls.MetroTabControl();
-            this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.metroTabControl_AdminPanel = new MetroFramework.Controls.MetroTabControl();
+            this.metroTabPage_produits = new MetroFramework.Controls.MetroTabPage();
+            this.metroPanel_statistics = new MetroFramework.Controls.MetroPanel();
+            this.metroLabel_statistics = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox_statistics_btn = new System.Windows.Forms.PictureBox();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox_statistics = new System.Windows.Forms.PictureBox();
             this.metroPanel_setting_products = new MetroFramework.Controls.MetroPanel();
             this.metroLabel_setting_products = new MetroFramework.Controls.MetroLabel();
             this.pictureBox_setting_products_btn = new System.Windows.Forms.PictureBox();
@@ -52,8 +57,11 @@
             this.metroPanel_view_products.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_view_all_products_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_view_products)).BeginInit();
-            this.metroTabControl_produits.SuspendLayout();
-            this.metroTabPage1.SuspendLayout();
+            this.metroTabControl_AdminPanel.SuspendLayout();
+            this.metroTabPage_produits.SuspendLayout();
+            this.metroPanel_statistics.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_statistics_btn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_statistics)).BeginInit();
             this.metroPanel_setting_products.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_setting_products_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_setting_products)).BeginInit();
@@ -167,28 +175,83 @@
             this.pictureBox_view_products.TabIndex = 0;
             this.pictureBox_view_products.TabStop = false;
             // 
-            // metroTabControl_produits
+            // metroTabControl_AdminPanel
             // 
-            this.metroTabControl_produits.Controls.Add(this.metroTabPage1);
-            this.metroTabControl_produits.Controls.Add(this.metroTabPage_clients);
-            this.metroTabControl_produits.Location = new System.Drawing.Point(23, 63);
-            this.metroTabControl_produits.Name = "metroTabControl_produits";
-            this.metroTabControl_produits.SelectedIndex = 0;
-            this.metroTabControl_produits.Size = new System.Drawing.Size(904, 554);
-            this.metroTabControl_produits.TabIndex = 5;
+            this.metroTabControl_AdminPanel.Controls.Add(this.metroTabPage_produits);
+            this.metroTabControl_AdminPanel.Controls.Add(this.metroTabPage_clients);
+            this.metroTabControl_AdminPanel.Location = new System.Drawing.Point(23, 63);
+            this.metroTabControl_AdminPanel.Name = "metroTabControl_AdminPanel";
+            this.metroTabControl_AdminPanel.SelectedIndex = 0;
+            this.metroTabControl_AdminPanel.Size = new System.Drawing.Size(904, 554);
+            this.metroTabControl_AdminPanel.TabIndex = 5;
             // 
-            // metroTabPage1
+            // metroTabPage_produits
             // 
-            this.metroTabPage1.Controls.Add(this.metroPanel_setting_products);
-            this.metroTabPage1.Controls.Add(this.metroPanel_view_products);
-            this.metroTabPage1.Controls.Add(this.metroPanel_add_product);
-            this.metroTabPage1.HorizontalScrollbarBarColor = true;
-            this.metroTabPage1.Location = new System.Drawing.Point(4, 35);
-            this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(896, 515);
-            this.metroTabPage1.TabIndex = 0;
-            this.metroTabPage1.Text = "Produits";
-            this.metroTabPage1.VerticalScrollbarBarColor = true;
+            this.metroTabPage_produits.Controls.Add(this.metroPanel_statistics);
+            this.metroTabPage_produits.Controls.Add(this.metroPanel_setting_products);
+            this.metroTabPage_produits.Controls.Add(this.metroPanel_view_products);
+            this.metroTabPage_produits.Controls.Add(this.metroPanel_add_product);
+            this.metroTabPage_produits.HorizontalScrollbarBarColor = true;
+            this.metroTabPage_produits.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage_produits.Name = "metroTabPage_produits";
+            this.metroTabPage_produits.Size = new System.Drawing.Size(896, 515);
+            this.metroTabPage_produits.TabIndex = 0;
+            this.metroTabPage_produits.Text = "Produits";
+            this.metroTabPage_produits.VerticalScrollbarBarColor = true;
+            // 
+            // metroPanel_statistics
+            // 
+            this.metroPanel_statistics.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
+            this.metroPanel_statistics.Controls.Add(this.metroLabel_statistics);
+            this.metroPanel_statistics.Controls.Add(this.pictureBox_statistics_btn);
+            this.metroPanel_statistics.Controls.Add(this.metroLabel5);
+            this.metroPanel_statistics.Controls.Add(this.pictureBox_statistics);
+            this.metroPanel_statistics.HorizontalScrollbarBarColor = true;
+            this.metroPanel_statistics.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel_statistics.HorizontalScrollbarSize = 10;
+            this.metroPanel_statistics.Location = new System.Drawing.Point(25, 253);
+            this.metroPanel_statistics.Name = "metroPanel_statistics";
+            this.metroPanel_statistics.Size = new System.Drawing.Size(220, 225);
+            this.metroPanel_statistics.TabIndex = 6;
+            this.metroPanel_statistics.VerticalScrollbarBarColor = true;
+            this.metroPanel_statistics.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel_statistics.VerticalScrollbarSize = 10;
+            // 
+            // metroLabel_statistics
+            // 
+            this.metroLabel_statistics.Location = new System.Drawing.Point(3, 136);
+            this.metroLabel_statistics.Name = "metroLabel_statistics";
+            this.metroLabel_statistics.Size = new System.Drawing.Size(214, 19);
+            this.metroLabel_statistics.TabIndex = 9;
+            this.metroLabel_statistics.Text = "Statistiques";
+            this.metroLabel_statistics.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox_statistics_btn
+            // 
+            this.pictureBox_statistics_btn.Image = global::POS.Properties.Resources.select;
+            this.pictureBox_statistics_btn.Location = new System.Drawing.Point(73, 158);
+            this.pictureBox_statistics_btn.Name = "pictureBox_statistics_btn";
+            this.pictureBox_statistics_btn.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_statistics_btn.TabIndex = 8;
+            this.pictureBox_statistics_btn.TabStop = false;
+            this.pictureBox_statistics_btn.Click += new System.EventHandler(this.pictureBox_statistics_btn_Click);
+            // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.Location = new System.Drawing.Point(40, 136);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(0, 0);
+            this.metroLabel5.TabIndex = 1;
+            // 
+            // pictureBox_statistics
+            // 
+            this.pictureBox_statistics.Image = global::POS.Properties.Resources.presentation;
+            this.pictureBox_statistics.Location = new System.Drawing.Point(46, 5);
+            this.pictureBox_statistics.Name = "pictureBox_statistics";
+            this.pictureBox_statistics.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox_statistics.TabIndex = 0;
+            this.pictureBox_statistics.TabStop = false;
             // 
             // metroPanel_setting_products
             // 
@@ -237,7 +300,7 @@
             // 
             // pictureBox_setting_products
             // 
-            this.pictureBox_setting_products.Image = global::POS.Properties.Resources.settings;
+            this.pictureBox_setting_products.Image = global::POS.Properties.Resources.settings__1_;
             this.pictureBox_setting_products.Location = new System.Drawing.Point(46, 5);
             this.pictureBox_setting_products.Name = "pictureBox_setting_products";
             this.pictureBox_setting_products.Size = new System.Drawing.Size(128, 128);
@@ -259,7 +322,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(950, 640);
-            this.Controls.Add(this.metroTabControl_produits);
+            this.Controls.Add(this.metroTabControl_AdminPanel);
             this.Name = "Form_Admin_Panel";
             this.Text = "Panneau d\'administration";
             this.Load += new System.EventHandler(this.Form_Admin_Panel_Load);
@@ -271,8 +334,12 @@
             this.metroPanel_view_products.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_view_all_products_btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_view_products)).EndInit();
-            this.metroTabControl_produits.ResumeLayout(false);
-            this.metroTabPage1.ResumeLayout(false);
+            this.metroTabControl_AdminPanel.ResumeLayout(false);
+            this.metroTabPage_produits.ResumeLayout(false);
+            this.metroPanel_statistics.ResumeLayout(false);
+            this.metroPanel_statistics.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_statistics_btn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_statistics)).EndInit();
             this.metroPanel_setting_products.ResumeLayout(false);
             this.metroPanel_setting_products.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_setting_products_btn)).EndInit();
@@ -293,13 +360,18 @@
         private System.Windows.Forms.PictureBox pictureBox_view_all_products_btn;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private System.Windows.Forms.PictureBox pictureBox_view_products;
-        private MetroFramework.Controls.MetroTabControl metroTabControl_produits;
-        private MetroFramework.Controls.MetroTabPage metroTabPage1;
+        private MetroFramework.Controls.MetroTabControl metroTabControl_AdminPanel;
+        private MetroFramework.Controls.MetroTabPage metroTabPage_produits;
         private MetroFramework.Controls.MetroTabPage metroTabPage_clients;
         private MetroFramework.Controls.MetroPanel metroPanel_setting_products;
         private MetroFramework.Controls.MetroLabel metroLabel_setting_products;
         private System.Windows.Forms.PictureBox pictureBox_setting_products_btn;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private System.Windows.Forms.PictureBox pictureBox_setting_products;
+        private MetroFramework.Controls.MetroPanel metroPanel_statistics;
+        private MetroFramework.Controls.MetroLabel metroLabel_statistics;
+        private System.Windows.Forms.PictureBox pictureBox_statistics_btn;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
+        private System.Windows.Forms.PictureBox pictureBox_statistics;
     }
 }

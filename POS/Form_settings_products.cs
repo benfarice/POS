@@ -187,6 +187,8 @@ namespace POS
 
         private void metroButton_image_Click(object sender, EventArgs e)
         {
+            openFileDialog_product_image.Filter = "Image files | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
+
             DialogResult result = openFileDialog_product_image.ShowDialog();
             if (result == DialogResult.OK)
             {
@@ -229,6 +231,21 @@ namespace POS
             }
 
 
+        }
+
+        private void metroButton_supprimer_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Voulez-vous vraiment supprimer le produit : "+product_selected.name, "Supprimer", MessageBoxButtons.OKCancel,MessageBoxIcon.Warning);
+            if(result == DialogResult.OK)
+            {
+                Boolean is_deleted = Database.delete_product(id_product_to_modify);
+                if (is_deleted)
+                {
+                    add_items_products();
+                    MessageBox.Show("le produit a été supprimé", "Supprimer", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    
+                }
+            }
         }
     }
 }

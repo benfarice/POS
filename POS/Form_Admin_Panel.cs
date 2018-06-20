@@ -39,5 +39,11 @@ namespace POS
             Form_settings_products f = new Form_settings_products();
             f.Show();
         }
+
+        private void pictureBox_statistics_btn_Click(object sender, EventArgs e)
+        {
+            Form_products_chart f = new Form_products_chart();
+            f.ShowDialog();
+        }
     }
 }

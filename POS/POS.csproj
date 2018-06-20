@@ -51,6 +51,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -122,6 +123,12 @@
     <Compile Include="Form_payment_methodes.Designer.cs">
       <DependentUpon>Form_payment_methodes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_products_chart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_products_chart.Designer.cs">
+      <DependentUpon>Form_products_chart.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_settings_products.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +171,9 @@
     <EmbeddedResource Include="Form_payment_methodes.resx">
       <DependentUpon>Form_payment_methodes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_products_chart.resx">
+      <DependentUpon>Form_products_chart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_settings_products.resx">
       <DependentUpon>Form_settings_products.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +209,10 @@
     <None Include="bin\images\credit-card.png" />
     <None Include="bin\images\cheque.png" />
     <None Include="bin\images\money.png" />
+    <None Include="bin\images\presentation.png" />
+    <None Include="bin\images\like.png" />
+    <None Include="bin\images\left-arrow.png" />
+    <None Include="bin\images\settings %281%29.png" />
     <Content Include="MetroFramework.txt" />
     <None Include="Resources\excel.png" />
     <None Include="Resources\shopping-basket.png" />

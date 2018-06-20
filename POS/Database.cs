@@ -295,7 +295,7 @@ namespace POS
         }
 
 
-       public static DataTable get_products_catgs()
+        public static DataTable get_products_catgs()
        {
             DataTable t = new DataTable();
             connecter();
@@ -308,8 +308,19 @@ namespace POS
        }
 
 
-
-       public static DataTable get_products()
+        public static DataTable get_display_sales_chart()
+        {
+            DataTable t = new DataTable();
+            connecter();
+            string query = @"select p.name,count(t.TransactionItemID) as nbr from TransactionItem t 
+            inner join products p on p.id = t.ProductID group by p.id,p.name";
+            SqlCommand command = new SqlCommand(query, con);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            adapter.Fill(t);
+            disconnect();
+            return t;
+        }
+        public static DataTable get_products()
         {
             DataTable t = new DataTable();
             connecter();
@@ -362,7 +373,7 @@ namespace POS
             return t;
         }
         public static Boolean save_new_product(Class_product p)
-       {
+        {
             Boolean is_saved = true;
             connecter();
             try
@@ -392,8 +403,34 @@ namespace POS
            
             disconnect();
             return is_saved;
-       }
+        }
+        public static Boolean delete_product(int id)
+        {
+            Boolean is_deleted = true;
+            connecter();
+            try
+            {
+                string query = "delete from products where id = @id";
+                SqlCommand cmd = new SqlCommand(query, Con);
+               
+                cmd.Parameters.Add("@id", SqlDbType.Int);
+                cmd.Parameters["@id"].Value = id;
+                
+                int i = cmd.ExecuteNonQuery();
+                if (i == -1)
+                {
+                    is_deleted = false;
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+                is_deleted = false;
+            }
 
+            disconnect();
+            return is_deleted;
+        }
         public static Boolean update_product_by_id(int id,Class_product p)
         {
             Boolean is_updated = true;

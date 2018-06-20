@@ -78,8 +78,9 @@ namespace POS
         private void pictureBox11_Click(object sender, EventArgs e)
         {
             Form_Pay f = new Form_Pay();
-            f.Show();
-            this.Hide();
+            //f.Show();
+            //this.Hide();
+            f.ShowDialog();
         }
 
         private void pictureBox12_Click(object sender, EventArgs e)

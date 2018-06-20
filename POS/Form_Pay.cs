@@ -45,7 +45,7 @@ namespace POS
             p_title0.Text = "CLient";
 
             p_title0.Size = new Size(120, 24);
-            p_title0.BackColor = System.Drawing.ColorTranslator.FromHtml("#1abc9c");
+            p_title0.BackColor = System.Drawing.ColorTranslator.FromHtml("#f39c12");
             p_title0.ForeColor = System.Drawing.ColorTranslator.FromHtml("#34495e");
             p_title0.Font = new Font("Arial", 9, FontStyle.Bold);
 
@@ -63,10 +63,10 @@ namespace POS
                 AutoSize = false,
                 TextAlign = ContentAlignment.MiddleCenter,
             };
-            n_tab_label0.Text = "numero table";
+            n_tab_label0.Text = "Numéro table";
 
             n_tab_label0.Size = new Size(120, 24);
-            n_tab_label0.BackColor = System.Drawing.ColorTranslator.FromHtml("#1abc9c");
+            n_tab_label0.BackColor = System.Drawing.ColorTranslator.FromHtml("#f39c12");
             n_tab_label0.ForeColor = System.Drawing.ColorTranslator.FromHtml("#34495e");
             n_tab_label0.Font = new Font("Arial", 9, FontStyle.Bold);
 
@@ -88,7 +88,7 @@ namespace POS
             total_label0.Text ="Total";
 
             total_label0.Size = new Size(120, 24);
-            total_label0.BackColor = System.Drawing.ColorTranslator.FromHtml("#1abc9c");
+            total_label0.BackColor = System.Drawing.ColorTranslator.FromHtml("#f39c12");
             total_label0.ForeColor = System.Drawing.ColorTranslator.FromHtml("#34495e");
             total_label0.Font = new Font("Arial", 9, FontStyle.Bold);
 
@@ -172,7 +172,7 @@ namespace POS
                     AutoSize = false,
                     TextAlign = ContentAlignment.MiddleCenter,
                 };
-                total_label.Text = total.ToString();
+                total_label.Text = total.ToString()+" DH ";
 
                 total_label.Size = new Size(120, 24);
                 total_label.BackColor = System.Drawing.ColorTranslator.FromHtml("#1abc9c");

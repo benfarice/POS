@@ -37,6 +37,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.metroTextBox_Recherche = new MetroFramework.Controls.MetroTextBox();
             this.products = new MetroFramework.Controls.MetroTabControl();
+            this.metroTabPageValider_la_commande = new MetroFramework.Controls.MetroTabPage();
+            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.metroTabPage_Enregistrer_le_client = new MetroFramework.Controls.MetroTabPage();
             this.panel4 = new System.Windows.Forms.Panel();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
@@ -49,8 +51,6 @@
             this.metroTextBox_nom = new MetroFramework.Controls.MetroTextBox();
             this.metroTextBox_phone = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.metroTabPageValider_la_commande = new MetroFramework.Controls.MetroTabPage();
-            this.label2 = new System.Windows.Forms.Label();
             this.metroTabPage_le_numéro_table = new MetroFramework.Controls.MetroTabPage();
             this.flowLayoutPanel_tables = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -58,6 +58,7 @@
             this.metroLabel_nom_client = new MetroFramework.Controls.MetroLabel();
             this.metroTextBox_numero_table = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -65,14 +66,13 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage_Choisi_le_produit.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.metroTabPageValider_la_commande.SuspendLayout();
             this.metroTabPage_Enregistrer_le_client.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.metroTabPageValider_la_commande.SuspendLayout();
             this.metroTabPage_le_numéro_table.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -87,12 +87,12 @@
             // metroTabControl1
             // 
             this.metroTabControl1.Controls.Add(this.metroTabPage_Choisi_le_produit);
-            this.metroTabControl1.Controls.Add(this.metroTabPageValider_la_commande);
             this.metroTabControl1.Controls.Add(this.metroTabPage_Enregistrer_le_client);
             this.metroTabControl1.Controls.Add(this.metroTabPage_le_numéro_table);
+            this.metroTabControl1.Controls.Add(this.metroTabPageValider_la_commande);
             this.metroTabControl1.Location = new System.Drawing.Point(23, 54);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(904, 547);
             this.metroTabControl1.TabIndex = 0;
             // 
@@ -169,6 +169,30 @@
             this.products.Name = "products";
             this.products.Size = new System.Drawing.Size(863, 238);
             this.products.TabIndex = 28;
+            // 
+            // metroTabPageValider_la_commande
+            // 
+            this.metroTabPageValider_la_commande.Controls.Add(this.metroLabel8);
+            this.metroTabPageValider_la_commande.Controls.Add(this.metroLabel7);
+            this.metroTabPageValider_la_commande.Controls.Add(this.pictureBox6);
+            this.metroTabPageValider_la_commande.Controls.Add(this.pictureBox5);
+            this.metroTabPageValider_la_commande.HorizontalScrollbarBarColor = true;
+            this.metroTabPageValider_la_commande.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPageValider_la_commande.Name = "metroTabPageValider_la_commande";
+            this.metroTabPageValider_la_commande.Size = new System.Drawing.Size(896, 508);
+            this.metroTabPageValider_la_commande.TabIndex = 4;
+            this.metroTabPageValider_la_commande.Text = "Valider la commande";
+            this.metroTabPageValider_la_commande.VerticalScrollbarBarColor = true;
+            // 
+            // metroLabel7
+            // 
+            this.metroLabel7.AutoSize = true;
+            this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel7.Location = new System.Drawing.Point(375, 39);
+            this.metroLabel7.Name = "metroLabel7";
+            this.metroLabel7.Size = new System.Drawing.Size(137, 19);
+            this.metroLabel7.TabIndex = 34;
+            this.metroLabel7.Text = "Valider la commande";
             // 
             // metroTabPage_Enregistrer_le_client
             // 
@@ -280,30 +304,6 @@
             this.metroLabel2.TabIndex = 0;
             this.metroLabel2.Text = "Nom";
             // 
-            // metroTabPageValider_la_commande
-            // 
-            this.metroTabPageValider_la_commande.Controls.Add(this.metroLabel7);
-            this.metroTabPageValider_la_commande.Controls.Add(this.label2);
-            this.metroTabPageValider_la_commande.Controls.Add(this.pictureBox6);
-            this.metroTabPageValider_la_commande.Controls.Add(this.pictureBox5);
-            this.metroTabPageValider_la_commande.HorizontalScrollbarBarColor = true;
-            this.metroTabPageValider_la_commande.Location = new System.Drawing.Point(4, 35);
-            this.metroTabPageValider_la_commande.Name = "metroTabPageValider_la_commande";
-            this.metroTabPageValider_la_commande.Size = new System.Drawing.Size(896, 508);
-            this.metroTabPageValider_la_commande.TabIndex = 4;
-            this.metroTabPageValider_la_commande.Text = "Valider la commande";
-            this.metroTabPageValider_la_commande.VerticalScrollbarBarColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(400, 225);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 33);
-            this.label2.TabIndex = 33;
-            this.label2.Text = "Annuler";
-            // 
             // metroTabPage_le_numéro_table
             // 
             this.metroTabPage_le_numéro_table.Controls.Add(this.flowLayoutPanel_tables);
@@ -370,6 +370,15 @@
             this.metroLabel1.TabIndex = 5;
             this.metroLabel1.Text = "Le numéro de la table ";
             // 
+            // metroLabel8
+            // 
+            this.metroLabel8.AutoSize = true;
+            this.metroLabel8.Location = new System.Drawing.Point(421, 374);
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.Size = new System.Drawing.Size(54, 19);
+            this.metroLabel8.TabIndex = 35;
+            this.metroLabel8.Text = "Annuler";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::POS.Properties.Resources.research;
@@ -382,8 +391,8 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::POS.Properties.Resources.back__1_;
-            this.pictureBox6.Location = new System.Drawing.Point(416, 270);
+            this.pictureBox6.Image = global::POS.Properties.Resources.left_arrow;
+            this.pictureBox6.Location = new System.Drawing.Point(416, 412);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(64, 64);
             this.pictureBox6.TabIndex = 31;
@@ -392,10 +401,10 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::POS.Properties.Resources._checked;
-            this.pictureBox5.Location = new System.Drawing.Point(384, 80);
+            this.pictureBox5.Image = global::POS.Properties.Resources.like;
+            this.pictureBox5.Location = new System.Drawing.Point(320, 85);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox5.Size = new System.Drawing.Size(256, 256);
             this.pictureBox5.TabIndex = 25;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click_1);
@@ -437,16 +446,6 @@
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // metroLabel7
-            // 
-            this.metroLabel7.AutoSize = true;
-            this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel7.Location = new System.Drawing.Point(375, 39);
-            this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(137, 19);
-            this.metroLabel7.TabIndex = 34;
-            this.metroLabel7.Text = "Valider la commande";
-            // 
             // Form_Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -460,13 +459,13 @@
             this.metroTabPage_Choisi_le_produit.ResumeLayout(false);
             this.metroTabPage_Choisi_le_produit.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.metroTabPageValider_la_commande.ResumeLayout(false);
+            this.metroTabPageValider_la_commande.PerformLayout();
             this.metroTabPage_Enregistrer_le_client.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.metroTabPageValider_la_commande.ResumeLayout(false);
-            this.metroTabPageValider_la_commande.PerformLayout();
             this.metroTabPage_le_numéro_table.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -519,7 +518,7 @@
         private MetroFramework.Controls.MetroLabel metroLabel6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private MetroFramework.Controls.MetroTextBox metroTextBox_search_customers;
-        private System.Windows.Forms.Label label2;
         private MetroFramework.Controls.MetroLabel metroLabel7;
+        private MetroFramework.Controls.MetroLabel metroLabel8;
     }
 }

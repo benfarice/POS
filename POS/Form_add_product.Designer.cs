@@ -57,6 +57,7 @@
             // metroTextBox_product_name
             // 
             this.metroTextBox_product_name.Location = new System.Drawing.Point(150, 75);
+            this.metroTextBox_product_name.MaxLength = 13;
             this.metroTextBox_product_name.Name = "metroTextBox_product_name";
             this.metroTextBox_product_name.Size = new System.Drawing.Size(197, 23);
             this.metroTextBox_product_name.TabIndex = 1;
