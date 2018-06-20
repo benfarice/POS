@@ -213,6 +213,7 @@
     <None Include="bin\images\like.png" />
     <None Include="bin\images\left-arrow.png" />
     <None Include="bin\images\settings %281%29.png" />
+    <None Include="bin\images\email.png" />
     <Content Include="MetroFramework.txt" />
     <None Include="Resources\excel.png" />
     <None Include="Resources\shopping-basket.png" />

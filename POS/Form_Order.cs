@@ -485,6 +485,7 @@ namespace POS
                 ArrayList p_n = Database.get_product_price_name(order.id_produit);
                 order.nom_produit = (string)p_n[0];
                 order.price = (float)p_n[1];
+                order.Qte = 1;
                 list_des_orders.Add(order);
 
 
@@ -732,10 +733,8 @@ namespace POS
             //*****************
             MetroFramework.Controls.MetroTextBox Quantite_title = new MetroFramework.Controls.MetroTextBox();
 
-            if (order.Qte != null)
-            {
-                Quantite_title.Text = order.Qte.ToString();
-            }
+            Quantite_title.Text = order.Qte.ToString();
+         
             Quantite_title.Size = new Size(120, 24);
             Quantite_title.Name = "Quantite_title";
 
