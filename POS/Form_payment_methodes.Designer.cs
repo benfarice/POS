@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.metroPanel_master_card = new MetroFramework.Controls.MetroPanel();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroPanel_cheque = new MetroFramework.Controls.MetroPanel();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.metroPanel_cash = new MetroFramework.Controls.MetroPanel();
-            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel_cheque = new MetroFramework.Controls.MetroLabel();
             this.metroLabel_master_card = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox_master_card_btn = new System.Windows.Forms.PictureBox();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox_master_card = new System.Windows.Forms.PictureBox();
+            this.metroPanel_cheque = new MetroFramework.Controls.MetroPanel();
+            this.metroLabel_cheque = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox_cheque_btn = new System.Windows.Forms.PictureBox();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox_cheque = new System.Windows.Forms.PictureBox();
+            this.metroPanel_cash = new MetroFramework.Controls.MetroPanel();
             this.metroLabel_cash = new MetroFramework.Controls.MetroLabel();
             this.pictureBox_cash_btn = new System.Windows.Forms.PictureBox();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox_cash = new System.Windows.Forms.PictureBox();
-            this.pictureBox_cheque_btn = new System.Windows.Forms.PictureBox();
-            this.pictureBox_cheque = new System.Windows.Forms.PictureBox();
-            this.pictureBox_master_card_btn = new System.Windows.Forms.PictureBox();
-            this.pictureBox_master_card = new System.Windows.Forms.PictureBox();
             this.metroPanel_master_card.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_master_card_btn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_master_card)).BeginInit();
             this.metroPanel_cheque.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cheque_btn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cheque)).BeginInit();
             this.metroPanel_cash.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cash_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cash)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cheque_btn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cheque)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_master_card_btn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_master_card)).BeginInit();
             this.SuspendLayout();
             // 
             // metroPanel_master_card
@@ -72,6 +72,24 @@
             this.metroPanel_master_card.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel_master_card.VerticalScrollbarSize = 10;
             // 
+            // metroLabel_master_card
+            // 
+            this.metroLabel_master_card.Location = new System.Drawing.Point(3, 148);
+            this.metroLabel_master_card.Name = "metroLabel_master_card";
+            this.metroLabel_master_card.Size = new System.Drawing.Size(214, 19);
+            this.metroLabel_master_card.TabIndex = 9;
+            this.metroLabel_master_card.Text = "Paiements par carte de crédit";
+            this.metroLabel_master_card.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox_master_card_btn
+            // 
+            this.pictureBox_master_card_btn.Image = global::POS.Properties.Resources.select;
+            this.pictureBox_master_card_btn.Location = new System.Drawing.Point(74, 186);
+            this.pictureBox_master_card_btn.Name = "pictureBox_master_card_btn";
+            this.pictureBox_master_card_btn.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_master_card_btn.TabIndex = 8;
+            this.pictureBox_master_card_btn.TabStop = false;
+            // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
@@ -79,6 +97,15 @@
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(0, 0);
             this.metroLabel1.TabIndex = 1;
+            // 
+            // pictureBox_master_card
+            // 
+            this.pictureBox_master_card.Image = global::POS.Properties.Resources.credit_card;
+            this.pictureBox_master_card.Location = new System.Drawing.Point(46, 5);
+            this.pictureBox_master_card.Name = "pictureBox_master_card";
+            this.pictureBox_master_card.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox_master_card.TabIndex = 0;
+            this.pictureBox_master_card.TabStop = false;
             // 
             // metroPanel_cheque
             // 
@@ -98,6 +125,24 @@
             this.metroPanel_cheque.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel_cheque.VerticalScrollbarSize = 10;
             // 
+            // metroLabel_cheque
+            // 
+            this.metroLabel_cheque.Location = new System.Drawing.Point(3, 148);
+            this.metroLabel_cheque.Name = "metroLabel_cheque";
+            this.metroLabel_cheque.Size = new System.Drawing.Size(214, 19);
+            this.metroLabel_cheque.TabIndex = 9;
+            this.metroLabel_cheque.Text = "Paiements par chèque\t";
+            this.metroLabel_cheque.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox_cheque_btn
+            // 
+            this.pictureBox_cheque_btn.Image = global::POS.Properties.Resources.select;
+            this.pictureBox_cheque_btn.Location = new System.Drawing.Point(74, 186);
+            this.pictureBox_cheque_btn.Name = "pictureBox_cheque_btn";
+            this.pictureBox_cheque_btn.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_cheque_btn.TabIndex = 8;
+            this.pictureBox_cheque_btn.TabStop = false;
+            // 
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
@@ -105,6 +150,15 @@
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(0, 0);
             this.metroLabel2.TabIndex = 1;
+            // 
+            // pictureBox_cheque
+            // 
+            this.pictureBox_cheque.Image = global::POS.Properties.Resources.cheque;
+            this.pictureBox_cheque.Location = new System.Drawing.Point(46, 5);
+            this.pictureBox_cheque.Name = "pictureBox_cheque";
+            this.pictureBox_cheque.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox_cheque.TabIndex = 0;
+            this.pictureBox_cheque.TabStop = false;
             // 
             // metroPanel_cash
             // 
@@ -123,32 +177,6 @@
             this.metroPanel_cash.VerticalScrollbarBarColor = true;
             this.metroPanel_cash.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel_cash.VerticalScrollbarSize = 10;
-            // 
-            // metroLabel3
-            // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(40, 136);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(0, 0);
-            this.metroLabel3.TabIndex = 1;
-            // 
-            // metroLabel_cheque
-            // 
-            this.metroLabel_cheque.Location = new System.Drawing.Point(3, 148);
-            this.metroLabel_cheque.Name = "metroLabel_cheque";
-            this.metroLabel_cheque.Size = new System.Drawing.Size(214, 19);
-            this.metroLabel_cheque.TabIndex = 9;
-            this.metroLabel_cheque.Text = "Paiements par chèque\t";
-            this.metroLabel_cheque.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // metroLabel_master_card
-            // 
-            this.metroLabel_master_card.Location = new System.Drawing.Point(3, 148);
-            this.metroLabel_master_card.Name = "metroLabel_master_card";
-            this.metroLabel_master_card.Size = new System.Drawing.Size(214, 19);
-            this.metroLabel_master_card.TabIndex = 9;
-            this.metroLabel_master_card.Text = "Paiements par carte de crédit";
-            this.metroLabel_master_card.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // metroLabel_cash
             // 
@@ -169,6 +197,14 @@
             this.pictureBox_cash_btn.TabStop = false;
             this.pictureBox_cash_btn.Click += new System.EventHandler(this.pictureBox_cash_btn_Click);
             // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.Location = new System.Drawing.Point(40, 136);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(0, 0);
+            this.metroLabel3.TabIndex = 1;
+            // 
             // pictureBox_cash
             // 
             this.pictureBox_cash.Image = global::POS.Properties.Resources.money;
@@ -178,47 +214,11 @@
             this.pictureBox_cash.TabIndex = 0;
             this.pictureBox_cash.TabStop = false;
             // 
-            // pictureBox_cheque_btn
-            // 
-            this.pictureBox_cheque_btn.Image = global::POS.Properties.Resources.select;
-            this.pictureBox_cheque_btn.Location = new System.Drawing.Point(74, 186);
-            this.pictureBox_cheque_btn.Name = "pictureBox_cheque_btn";
-            this.pictureBox_cheque_btn.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox_cheque_btn.TabIndex = 8;
-            this.pictureBox_cheque_btn.TabStop = false;
-            // 
-            // pictureBox_cheque
-            // 
-            this.pictureBox_cheque.Image = global::POS.Properties.Resources.cheque;
-            this.pictureBox_cheque.Location = new System.Drawing.Point(46, 5);
-            this.pictureBox_cheque.Name = "pictureBox_cheque";
-            this.pictureBox_cheque.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox_cheque.TabIndex = 0;
-            this.pictureBox_cheque.TabStop = false;
-            // 
-            // pictureBox_master_card_btn
-            // 
-            this.pictureBox_master_card_btn.Image = global::POS.Properties.Resources.select;
-            this.pictureBox_master_card_btn.Location = new System.Drawing.Point(74, 186);
-            this.pictureBox_master_card_btn.Name = "pictureBox_master_card_btn";
-            this.pictureBox_master_card_btn.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox_master_card_btn.TabIndex = 8;
-            this.pictureBox_master_card_btn.TabStop = false;
-            // 
-            // pictureBox_master_card
-            // 
-            this.pictureBox_master_card.Image = global::POS.Properties.Resources.credit_card;
-            this.pictureBox_master_card.Location = new System.Drawing.Point(46, 5);
-            this.pictureBox_master_card.Name = "pictureBox_master_card";
-            this.pictureBox_master_card.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox_master_card.TabIndex = 0;
-            this.pictureBox_master_card.TabStop = false;
-            // 
             // Form_payment_methodes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(922, 341);
+            this.ClientSize = new System.Drawing.Size(1024, 341);
             this.Controls.Add(this.metroPanel_cash);
             this.Controls.Add(this.metroPanel_cheque);
             this.Controls.Add(this.metroPanel_master_card);
@@ -227,16 +227,16 @@
             this.Load += new System.EventHandler(this.Form_payment_methodes_Load);
             this.metroPanel_master_card.ResumeLayout(false);
             this.metroPanel_master_card.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_master_card_btn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_master_card)).EndInit();
             this.metroPanel_cheque.ResumeLayout(false);
             this.metroPanel_cheque.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cheque_btn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cheque)).EndInit();
             this.metroPanel_cash.ResumeLayout(false);
             this.metroPanel_cash.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cash_btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cash)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cheque_btn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cheque)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_master_card_btn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_master_card)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.metroRadioButton_password = new MetroFramework.Controls.MetroRadioButton();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroRadioButton_Votre_ID = new MetroFramework.Controls.MetroRadioButton();
@@ -48,11 +49,10 @@
             this.Button3 = new MetroFramework.Controls.MetroButton();
             this.Button2 = new MetroFramework.Controls.MetroButton();
             this.Button1 = new MetroFramework.Controls.MetroButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroPanel2.SuspendLayout();
-            this.metroPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.metroPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,6 +77,16 @@
             this.metroPanel2.VerticalScrollbarBarColor = true;
             this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel2.VerticalScrollbarSize = 10;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::POS.Properties.Resources.login;
+            this.pictureBox2.Location = new System.Drawing.Point(291, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.TabIndex = 14;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // metroRadioButton_password
             // 
@@ -271,16 +281,6 @@
             this.Button1.Text = "1";
             this.Button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::POS.Properties.Resources.login;
-            this.pictureBox2.Location = new System.Drawing.Point(291, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::POS.Properties.Resources.coffee_shop__1_;
@@ -295,7 +295,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(950, 567);
+            this.ClientSize = new System.Drawing.Size(1024, 676);
             this.Controls.Add(this.metroPanel3);
             this.Controls.Add(this.metroPanel2);
             this.Controls.Add(this.pictureBox1);
@@ -304,8 +304,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.metroPanel2.ResumeLayout(false);
             this.metroPanel2.PerformLayout();
-            this.metroPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.metroPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

@@ -11,6 +11,7 @@ using System.Data.SqlClient;
 using System.Collections;
 using System.Text.RegularExpressions;
 using System.IO;
+using MetroFramework.Controls;
 
 namespace POS
 {
@@ -27,8 +28,116 @@ namespace POS
         {
             this.idO = id_order;
             InitializeComponent();
+            foreach ( MetroTextBox tb in this.Controls.OfType<MetroTextBox>())
+            {
+                tb.Enter += textBox_Enter;
+            }
         }
-        
+       
+        public void func_tb()
+        {
+          
+            foreach (Control tb in this.Controls)
+            {
+                if(tb is MetroTextBox)
+                {
+                    MessageBox.Show("me");
+                    tb.Enter += textBox_Enter;
+                    MessageBox.Show(tb.Name.ToString());
+                }
+                else
+                {
+                    //MessageBox.Show("no text box");
+                }
+                foreach (Control c in tb.Controls)
+                {
+                    if (c is MetroTextBox)
+                    {
+                        MessageBox.Show("me");
+                        c.Enter += textBox_Enter;
+                        MessageBox.Show(c.Name.ToString());
+                    }
+                    else
+                    {
+                        //MessageBox.Show("no text box");
+                    }
+                    foreach (Control d in c.Controls)
+                    {
+                        if (d is MetroTextBox)
+                        {
+                            MessageBox.Show("me");
+                            d.Enter += textBox_Enter;
+                            MessageBox.Show(d.Name.ToString());
+                        }
+                        else
+                        {
+                            //MessageBox.Show("no text box");
+                        }
+                        foreach (Control p in d.Controls)
+                        {
+                            if (p is MetroTextBox)
+                            {
+                                MessageBox.Show("me");
+                                p.Enter += textBox_Enter;
+                                MessageBox.Show(p.Name.ToString());
+                            }
+                            else
+                            {
+                                //MessageBox.Show("no text box");
+                            }
+                            foreach (Control v in p.Controls)
+                            {
+                                if (v is MetroTextBox)
+                                {
+                                    MessageBox.Show("me");
+                                    v.Enter += textBox_Enter;
+                                    MessageBox.Show(v.Name.ToString());
+                                }
+                                else
+                                {
+                                    //MessageBox.Show("no text box");
+                                }
+                                foreach (Control w in v.Controls)
+                                {
+                                    if (w is MetroTextBox)
+                                    {
+                                        MessageBox.Show("me");
+                                        w.Enter += textBox_Enter;
+                                        MessageBox.Show(w.Name.ToString());
+                                    }
+                                    else
+                                    {
+                                        //MessageBox.Show("no text box");
+                                    }
+                                    foreach (Control q in w.Controls)
+                                    {
+                                        if (q is MetroTextBox)
+                                        {
+                                            MessageBox.Show("me");
+                                            q.Enter += textBox_Enter;
+                                            MessageBox.Show(q.Name.ToString());
+                                        }
+                                        else
+                                        {
+                                            //MessageBox.Show("no text box");
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            MessageBox.Show("func tb executed");
+
+        }
+        void textBox_Enter(object sender, EventArgs e)
+        {
+            Program.focusedTextbox = (MetroTextBox)sender;
+            MessageBox.Show("her");
+        }
+
         private void Form_Order_Load(object sender, EventArgs e)
         {
             //get_gridview_data();
@@ -37,6 +146,7 @@ namespace POS
             add_tables_to_form();
             add_customers_to_form();
             metroTabControl1.SelectedTab = metroTabPage_Choisi_le_produit;
+            create_keyboards();
 
         }
 
@@ -200,9 +310,6 @@ namespace POS
             flowLayoutPanel_tables.Controls.Add(coffee_table);
         }
 
-
-
-
         protected void table_img_Click(object sender, EventArgs e)
         {
             
@@ -251,12 +358,6 @@ namespace POS
         //    }
 
         //}
-
-
-
-
-
-
 
         public void get_gridview_data()
         {
@@ -666,8 +767,6 @@ namespace POS
             }
             // identify which button was clicked and perform necessary actions
         }
-
-
         public  void refresh_orders_list()
         {
             flowLayoutPanel_order_details.Controls.Clear();
@@ -682,6 +781,7 @@ namespace POS
                 total_money += order_x.price * order_x.Qte;
             }
             label_Total.Text = "Total " + total_money + " DH";
+            func_tb();
         }
         private  Panel createPanel_order(Class_order order)
         {
@@ -974,9 +1074,6 @@ namespace POS
 
         }
 
-
-       
-     
         public void confirm_commande()
         {
            
@@ -1137,6 +1234,10 @@ namespace POS
         private void metroTextBox_Recherche_KeyDown(object sender, KeyEventArgs e)
         {
 
+        }
+        public void create_keyboards()
+        {
+            Class_functions.create_keyboard_panel(panel_keyboard_orders_create);
         }
     }
 }

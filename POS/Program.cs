@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework.Controls;
 
 namespace POS
 {
@@ -19,5 +20,6 @@ namespace POS
             Application.Run(new Form_login());
         }
         public static string username_loged_in = null;
+        public static MetroTextBox focusedTextbox = null;
     }
 }

@@ -31,10 +31,12 @@
             this.products = new MetroFramework.Controls.MetroTabControl();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroTextBox_Recherche = new MetroFramework.Controls.MetroTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.metroButton_supprimer = new MetroFramework.Controls.MetroButton();
             this.metroButton_enregistrer = new MetroFramework.Controls.MetroButton();
+            this.pictureBox_image = new System.Windows.Forms.PictureBox();
             this.metroButton_image = new MetroFramework.Controls.MetroButton();
             this.metroComboBox_categorie = new MetroFramework.Controls.MetroComboBox();
             this.metroTextBox_prix = new MetroFramework.Controls.MetroTextBox();
@@ -45,12 +47,10 @@
             this.metroLabel_barcode = new MetroFramework.Controls.MetroLabel();
             this.metroLabel_nom = new MetroFramework.Controls.MetroLabel();
             this.openFileDialog_product_image = new System.Windows.Forms.OpenFileDialog();
-            this.pictureBox_image = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_image)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // products
@@ -77,6 +77,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(486, 25);
             this.panel1.TabIndex = 32;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::POS.Properties.Resources.research;
+            this.pictureBox1.Location = new System.Drawing.Point(454, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(26, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // metroTextBox_Recherche
             // 
@@ -123,6 +133,15 @@
             this.metroButton_enregistrer.TabIndex = 10;
             this.metroButton_enregistrer.Text = "Modifier";
             this.metroButton_enregistrer.Click += new System.EventHandler(this.metroButton_enregistrer_Click);
+            // 
+            // pictureBox_image
+            // 
+            this.pictureBox_image.Location = new System.Drawing.Point(632, 14);
+            this.pictureBox_image.Name = "pictureBox_image";
+            this.pictureBox_image.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_image.TabIndex = 9;
+            this.pictureBox_image.TabStop = false;
             // 
             // metroButton_image
             // 
@@ -204,30 +223,11 @@
             // 
             this.openFileDialog_product_image.FileName = "openFileDialog1";
             // 
-            // pictureBox_image
-            // 
-            this.pictureBox_image.Location = new System.Drawing.Point(632, 14);
-            this.pictureBox_image.Name = "pictureBox_image";
-            this.pictureBox_image.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_image.TabIndex = 9;
-            this.pictureBox_image.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::POS.Properties.Resources.research;
-            this.pictureBox1.Location = new System.Drawing.Point(454, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(26, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // Form_settings_products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(950, 500);
+            this.ClientSize = new System.Drawing.Size(1024, 500);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.panel1);
@@ -236,10 +236,10 @@
             this.Text = "Gérer les produits";
             this.Load += new System.EventHandler(this.Form_settings_products_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_image)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

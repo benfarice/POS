@@ -48,7 +48,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart_products.Series.Add(series1);
-            this.chart_products.Size = new System.Drawing.Size(631, 329);
+            this.chart_products.Size = new System.Drawing.Size(984, 329);
             this.chart_products.TabIndex = 0;
             this.chart_products.Text = "chart1";
             // 
@@ -56,7 +56,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(671, 409);
+            this.ClientSize = new System.Drawing.Size(1024, 409);
             this.Controls.Add(this.chart_products);
             this.Name = "Form_products_chart";
             this.Text = "Affichage des ventes par produit";
