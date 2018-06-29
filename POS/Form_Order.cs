@@ -28,10 +28,7 @@ namespace POS
         {
             this.idO = id_order;
             InitializeComponent();
-            foreach ( MetroTextBox tb in this.Controls.OfType<MetroTextBox>())
-            {
-                tb.Enter += textBox_Enter;
-            }
+           
         }
        
         public void func_tb()
@@ -41,9 +38,9 @@ namespace POS
             {
                 if(tb is MetroTextBox)
                 {
-                    MessageBox.Show("me");
+                    //MessageBox.Show("me");
                     tb.Enter += textBox_Enter;
-                    MessageBox.Show(tb.Name.ToString());
+                    //MessageBox.Show(tb.Name.ToString());
                 }
                 else
                 {
@@ -53,9 +50,9 @@ namespace POS
                 {
                     if (c is MetroTextBox)
                     {
-                        MessageBox.Show("me");
+                        //MessageBox.Show("me");
                         c.Enter += textBox_Enter;
-                        MessageBox.Show(c.Name.ToString());
+                        //MessageBox.Show(c.Name.ToString());
                     }
                     else
                     {
@@ -65,9 +62,9 @@ namespace POS
                     {
                         if (d is MetroTextBox)
                         {
-                            MessageBox.Show("me");
+                            //MessageBox.Show("me");
                             d.Enter += textBox_Enter;
-                            MessageBox.Show(d.Name.ToString());
+                            //MessageBox.Show(d.Name.ToString());
                         }
                         else
                         {
@@ -77,9 +74,9 @@ namespace POS
                         {
                             if (p is MetroTextBox)
                             {
-                                MessageBox.Show("me");
+                                //MessageBox.Show("me");
                                 p.Enter += textBox_Enter;
-                                MessageBox.Show(p.Name.ToString());
+                                //MessageBox.Show(p.Name.ToString());
                             }
                             else
                             {
@@ -89,9 +86,9 @@ namespace POS
                             {
                                 if (v is MetroTextBox)
                                 {
-                                    MessageBox.Show("me");
+                                    //MessageBox.Show("me");
                                     v.Enter += textBox_Enter;
-                                    MessageBox.Show(v.Name.ToString());
+                                    //MessageBox.Show(v.Name.ToString());
                                 }
                                 else
                                 {
@@ -101,9 +98,9 @@ namespace POS
                                 {
                                     if (w is MetroTextBox)
                                     {
-                                        MessageBox.Show("me");
+                                        //MessageBox.Show("me");
                                         w.Enter += textBox_Enter;
-                                        MessageBox.Show(w.Name.ToString());
+                                        //MessageBox.Show(w.Name.ToString());
                                     }
                                     else
                                     {
@@ -113,9 +110,9 @@ namespace POS
                                     {
                                         if (q is MetroTextBox)
                                         {
-                                            MessageBox.Show("me");
+                                            //MessageBox.Show("me");
                                             q.Enter += textBox_Enter;
-                                            MessageBox.Show(q.Name.ToString());
+                                            //MessageBox.Show(q.Name.ToString());
                                         }
                                         else
                                         {
@@ -129,13 +126,13 @@ namespace POS
                     }
                 }
             }
-            MessageBox.Show("func tb executed");
+            //MessageBox.Show("func tb executed");
 
         }
         void textBox_Enter(object sender, EventArgs e)
         {
             Program.focusedTextbox = (MetroTextBox)sender;
-            MessageBox.Show("her");
+            //MessageBox.Show("her");
         }
 
         private void Form_Order_Load(object sender, EventArgs e)
@@ -145,8 +142,15 @@ namespace POS
             add_items_products();
             add_tables_to_form();
             add_customers_to_form();
+
+
             metroTabControl1.SelectedTab = metroTabPage_Choisi_le_produit;
+            Program.focusedKeyBoardPanel = panel_keyboard_orders_create;
+
+
             create_keyboards();
+            func_tb();
+            
 
         }
 
