@@ -20,7 +20,7 @@ namespace POS
             Application.Run(new Form_login());
         }
         public static string username_loged_in = null;
-        public static MetroTextBox focusedTextbox = null;
+        public static TextBox focusedTextbox = null;
         public static Panel focusedKeyBoardPanel = null;
     }
 }

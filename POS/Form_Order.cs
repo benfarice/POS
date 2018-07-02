@@ -36,7 +36,7 @@ namespace POS
           
             foreach (Control tb in this.Controls)
             {
-                if(tb is MetroTextBox)
+                if(tb is TextBox)
                 {
                     //MessageBox.Show("me");
                     tb.Enter += textBox_Enter;
@@ -48,7 +48,7 @@ namespace POS
                 }
                 foreach (Control c in tb.Controls)
                 {
-                    if (c is MetroTextBox)
+                    if (c is TextBox)
                     {
                         //MessageBox.Show("me");
                         c.Enter += textBox_Enter;
@@ -60,7 +60,7 @@ namespace POS
                     }
                     foreach (Control d in c.Controls)
                     {
-                        if (d is MetroTextBox)
+                        if (d is TextBox)
                         {
                             //MessageBox.Show("me");
                             d.Enter += textBox_Enter;
@@ -72,7 +72,7 @@ namespace POS
                         }
                         foreach (Control p in d.Controls)
                         {
-                            if (p is MetroTextBox)
+                            if (p is TextBox)
                             {
                                 //MessageBox.Show("me");
                                 p.Enter += textBox_Enter;
@@ -84,7 +84,7 @@ namespace POS
                             }
                             foreach (Control v in p.Controls)
                             {
-                                if (v is MetroTextBox)
+                                if (v is TextBox)
                                 {
                                     //MessageBox.Show("me");
                                     v.Enter += textBox_Enter;
@@ -96,7 +96,7 @@ namespace POS
                                 }
                                 foreach (Control w in v.Controls)
                                 {
-                                    if (w is MetroTextBox)
+                                    if (w is TextBox)
                                     {
                                         //MessageBox.Show("me");
                                         w.Enter += textBox_Enter;
@@ -108,7 +108,7 @@ namespace POS
                                     }
                                     foreach (Control q in w.Controls)
                                     {
-                                        if (q is MetroTextBox)
+                                        if (q is TextBox)
                                         {
                                             //MessageBox.Show("me");
                                             q.Enter += textBox_Enter;
@@ -131,7 +131,7 @@ namespace POS
         }
         void textBox_Enter(object sender, EventArgs e)
         {
-            Program.focusedTextbox = (MetroTextBox)sender;
+            Program.focusedTextbox = (TextBox)sender;
             //MessageBox.Show("her");
         }
 
@@ -500,7 +500,7 @@ namespace POS
             if (e.KeyCode == Keys.Enter)
             {
                 //MessageBox.Show("yeah");
-                MetroFramework.Controls.MetroTextBox mytextbox = sender as MetroFramework.Controls.MetroTextBox;
+                TextBox mytextbox = sender as TextBox;
                 Boolean need_refresh = true;
                 foreach (Control c in mytextbox.Parent.Parent.Controls)
                 {
@@ -790,7 +790,7 @@ namespace POS
         private  Panel createPanel_order(Class_order order)
         {
             Panel p = new Panel();
-            p.Size = new Size(840, 25);
+            p.Size = new Size(970, 40);
 
             Label id = new Label();
             id.Text = order.id_produit.ToString();
@@ -806,13 +806,13 @@ namespace POS
             };
             p_title.Text = order.nom_produit;
 
-            p_title.Size = new Size(120, 24);
-            p_title.BackColor = System.Drawing.ColorTranslator.FromHtml("#1abc9c");
+            p_title.Size = new Size(240, 39);
+            p_title.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFFFFF");
             p_title.ForeColor = System.Drawing.ColorTranslator.FromHtml("#34495e");
-            p_title.Font = new Font("Arial", 9, FontStyle.Bold);
+            p_title.Font = new Font("Arial", 18, FontStyle.Bold);
 
 
-            produit_name.Size = new Size(129, 24);
+            produit_name.Size = new Size(260, 39);
             //produit_title.Location = new Point(0, 0);
             produit_name.Controls.Add(p_title);
             p.Controls.Add(produit_name);
@@ -824,22 +824,22 @@ namespace POS
             };
             Prix_title.Text = order.price.ToString();
             //Prix_title.Location = new Point(0, 70);
-            Prix_title.Size = new Size(120, 24);
+            Prix_title.Size = new Size(120, 39);
             Prix_title.BackColor = System.Drawing.ColorTranslator.FromHtml("#1abc9c");
             Prix_title.ForeColor = System.Drawing.ColorTranslator.FromHtml("#34495e");
-            Prix_title.Font = new Font("Arial", 9, FontStyle.Bold);
+            Prix_title.Font = new Font("Arial", 18, FontStyle.Bold);
             Panel Prix_title_panel = new Panel();
 
-            Prix_title_panel.Size = new Size(129, 24);
-            Prix_title_panel.Location = new Point(129, 0);
+            Prix_title_panel.Size = new Size(129, 39);
+            Prix_title_panel.Location = new Point(260, 0);
             Prix_title_panel.Controls.Add(Prix_title);
             p.Controls.Add(Prix_title_panel);
             //*****************
-            MetroFramework.Controls.MetroTextBox Quantite_title = new MetroFramework.Controls.MetroTextBox();
+            TextBox Quantite_title = new TextBox();
 
             Quantite_title.Text = order.Qte.ToString();
          
-            Quantite_title.Size = new Size(120, 24);
+            Quantite_title.Size = new Size(120, 39);
             Quantite_title.Name = "Quantite_title";
 
 
@@ -847,11 +847,11 @@ namespace POS
             Quantite_title.KeyDown += new  KeyEventHandler(qte_change);
             
 
-            Quantite_title.Font = new Font("Arial", 9, FontStyle.Bold);
+            Quantite_title.Font = new Font("Arial", 18, FontStyle.Bold);
             Panel Quantite_title_panel = new Panel();
 
-            Quantite_title_panel.Size = new Size(129, 24);
-            Quantite_title_panel.Location = new Point(258, 0);
+            Quantite_title_panel.Size = new Size(129, 39);
+            Quantite_title_panel.Location = new Point(390, 0);
             Quantite_title_panel.Controls.Add(Quantite_title);
             p.Controls.Add(Quantite_title_panel);
            
@@ -863,37 +863,38 @@ namespace POS
             };
             try
             {
-                Total_title.Text = (order.price * order.Qte).ToString()+" DH ";
+                Total_title.Text = (order.price * order.Qte).ToString();
             }
             catch (Exception t)
             {
                 Total_title.Text = "error";
             }
 
-            Total_title.Size = new Size(120, 24);
+            Total_title.Size = new Size(120, 39);
             Total_title.BackColor = System.Drawing.ColorTranslator.FromHtml("#1abc9c");
             Total_title.ForeColor = System.Drawing.ColorTranslator.FromHtml("#34495e");
-            Total_title.Font = new Font("Arial", 9, FontStyle.Bold);
+            Total_title.Font = new Font("Arial", 18, FontStyle.Bold);
             Panel Total_title_panel = new Panel();
 
-            Total_title_panel.Size = new Size(129, 24);
-            Total_title_panel.Location = new Point(387, 0);
+            Total_title_panel.Size = new Size(129, 39);
+            Total_title_panel.Location = new Point(520, 0);
             Total_title_panel.Controls.Add(Total_title);
             p.Controls.Add(Total_title_panel);
 
             //*****************
-            MetroFramework.Controls.MetroTextBox Options_title = new MetroFramework.Controls.MetroTextBox();
+            TextBox Options_title = new TextBox();
 
             Options_title.Text = order.options;
 
-            Options_title.Size = new Size(200, 24);
+            Options_title.Size = new Size(200, 39);
             Options_title.TextChanged += new EventHandler(update_order_options_func);
             Options_title.Name = "Options_title";
-            Options_title.Font = new Font("Arial", 9, FontStyle.Bold);
+            Options_title.Multiline = true;
+            Options_title.Font = new Font("Arial", 10, FontStyle.Bold);
             Panel Options_title_panel = new Panel();
 
-            Options_title_panel.Size = new Size(200, 24);
-            Options_title_panel.Location = new Point(516, 0);
+            Options_title_panel.Size = new Size(200, 39);
+            Options_title_panel.Location = new Point(645, 0);
             Options_title_panel.Controls.Add(Options_title);
             p.Controls.Add(Options_title_panel);
 
@@ -907,8 +908,8 @@ namespace POS
             delete_title.Click += new EventHandler(delete_item);
             Panel delete_title_panel = new Panel();
 
-            delete_title_panel.Size = new Size(129, 24);
-            delete_title_panel.Location = new Point(725, 0);
+            delete_title_panel.Size = new Size(129, 39);
+            delete_title_panel.Location = new Point(855, 0);
             delete_title_panel.Controls.Add(delete_title);
             p.Controls.Add(delete_title_panel);
 
@@ -972,13 +973,13 @@ namespace POS
             p_title.Text = "Produit";
             
             //p_title.Location = new Point(0, 70);
-            p_title.Size = new Size(120, 24);
+            p_title.Size = new Size(250, 24);
             p_title.BackColor = System.Drawing.ColorTranslator.FromHtml("#34495e");
             p_title.ForeColor = System.Drawing.ColorTranslator.FromHtml("#ecf0f1");
             p_title.Font = new Font("Arial", 9, FontStyle.Bold);
 
             
-            produit_title.Size = new Size(129, 24);
+            produit_title.Size = new Size(259, 24);
             //produit_title.Location = new Point(0, 0);
             produit_title.Controls.Add(p_title);
             p_titles.Controls.Add(produit_title);
@@ -988,7 +989,7 @@ namespace POS
                 AutoSize = false,
                 TextAlign = ContentAlignment.MiddleCenter,
             };
-            Prix_title.Text = "Prix";
+            Prix_title.Text = "Prix (DH)";
             //Prix_title.Location = new Point(0, 70);
             Prix_title.Size = new Size(120, 24);
             Prix_title.BackColor = System.Drawing.ColorTranslator.FromHtml("#34495e");
@@ -997,7 +998,7 @@ namespace POS
             Panel Prix_title_panel = new Panel();
 
             Prix_title_panel.Size = new Size(129, 24);
-            Prix_title_panel.Location = new Point(129, 0);
+            Prix_title_panel.Location = new Point(260, 0);
             Prix_title_panel.Controls.Add(Prix_title);
             p_titles.Controls.Add(Prix_title_panel);
             //*****************
@@ -1015,7 +1016,7 @@ namespace POS
             Panel Quantite_title_panel = new Panel();
 
             Quantite_title_panel.Size = new Size(129, 24);
-            Quantite_title_panel.Location = new Point(258, 0);
+            Quantite_title_panel.Location = new Point(390, 0);
             Quantite_title_panel.Controls.Add(Quantite_title);
             p_titles.Controls.Add(Quantite_title_panel);
 
@@ -1025,7 +1026,7 @@ namespace POS
                 AutoSize = false,
                 TextAlign = ContentAlignment.MiddleCenter,
             };
-            Total_title.Text = "Total";
+            Total_title.Text = "Total (DH)";
 
             Total_title.Size = new Size(120, 24);
             Total_title.BackColor = System.Drawing.ColorTranslator.FromHtml("#34495e");
@@ -1034,7 +1035,7 @@ namespace POS
             Panel Total_title_panel = new Panel();
 
             Total_title_panel.Size = new Size(129, 24);
-            Total_title_panel.Location = new Point(387, 0);
+            Total_title_panel.Location = new Point(520, 0);
             Total_title_panel.Controls.Add(Total_title);
             p_titles.Controls.Add(Total_title_panel);
 
@@ -1053,7 +1054,7 @@ namespace POS
             Panel Options_title_panel = new Panel();
 
             Options_title_panel.Size = new Size(200, 24);
-            Options_title_panel.Location = new Point(516, 0);
+            Options_title_panel.Location = new Point(645, 0);
             Options_title_panel.Controls.Add(Options_title);
             p_titles.Controls.Add(Options_title_panel);
 
@@ -1072,7 +1073,7 @@ namespace POS
             Panel delete_title_panel = new Panel();
 
             delete_title_panel.Size = new Size(120, 24);
-            delete_title_panel.Location = new Point(725, 0);
+            delete_title_panel.Location = new Point(855, 0);
             delete_title_panel.Controls.Add(delete_title);
             p_titles.Controls.Add(delete_title_panel);
 
@@ -1242,6 +1243,107 @@ namespace POS
         public void create_keyboards()
         {
             Class_functions.create_keyboard_panel(panel_keyboard_orders_create);
+            Class_functions.create_client_keyboard_panel(panel_keyboard_customers_list);
+            Class_functions.create_numeric_keyboard_panel(panel_numeric_keyboard_tables);
+        }
+
+        private void pictureBox_refresh_order_list_Click(object sender, EventArgs e)
+        {
+
+         foreach (Control myPanel in flowLayoutPanel_order_details.Controls.OfType<Panel>())
+            {
+                foreach (Class_order order_y in list_des_orders)
+                {
+                    try
+                    {
+                        string input_id = "";
+
+                        if (Class_functions.FindControlByName("id", (Panel)myPanel) != null)
+                        {
+                            input_id = Class_functions.FindControlByName("id", (Panel)myPanel).Text;
+                        }
+                        else
+                        {
+                            MessageBox.Show("null");
+                        }
+
+
+                        if (int.Parse(input_id) == order_y.id_produit)
+                        {
+                            try
+                            {
+                                string input_qte = "";
+                                if (Class_functions.FindControlByName("Quantite_title", (Panel)myPanel) != null)
+                                {
+                                    input_qte = Class_functions.FindControlByName("Quantite_title", (Panel)myPanel).Text;
+                                }
+                                else
+                                {
+                                    MessageBox.Show("null");
+                                }
+                                order_y.Qte = float.Parse(input_qte);
+                            }
+                            catch (Exception x)
+                            {
+                                MessageBox.Show(x.ToString());
+                                order_y.Qte = -1;
+                            }
+
+                            try
+                            {
+                                string options_input = "";
+
+                                if (Class_functions.FindControlByName("Options_title", (Panel)myPanel) != null)
+                                {
+                                    options_input = Class_functions.FindControlByName("Options_title", (Panel)myPanel).Text;
+                                }
+                                else
+                                {
+                                    MessageBox.Show("null");
+                                }
+
+                                if (options_input != "")
+                                {
+                                    order_y.options = options_input;
+                                }
+                                else
+                                {
+                                    order_y.options = "Sans spécifier les options";
+                                }
+                            }
+                            catch (Exception n)
+                            {
+                                MessageBox.Show(n.ToString());
+                            }
+                        }
+
+
+                    }catch(Exception h)
+                    {
+                        MessageBox.Show(h.ToString());
+                    }
+                  
+                }
+
+            }
+            refresh_orders_list();
+        }
+
+        private void metroTabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(metroTabControl1.SelectedTab == metroTabPage_Choisi_le_produit)
+            {
+                Program.focusedKeyBoardPanel = panel_keyboard_orders_create;
+
+            }else if(metroTabControl1.SelectedTab == metroTabPage_Enregistrer_le_client)
+            {
+                Program.focusedKeyBoardPanel = panel_keyboard_customers_list;
+
+            }else if(metroTabControl1.SelectedTab == metroTabPage_le_numéro_table)
+            {
+                Program.focusedKeyBoardPanel = panel_numeric_keyboard_tables;
+
+            }
         }
     }
 }

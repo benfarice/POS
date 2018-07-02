@@ -65,6 +65,43 @@ namespace POS
         }
 
 
+        public static void create_numeric_keyboard_panel(Panel my_panel)
+        {
+            MetroButton b1 = create_btn_keyboard("b1", "1", 2, 2);
+            b1.Click += B1_Click;
+            my_panel.Controls.Add(b1);
+            MetroButton b2 = create_btn_keyboard("b2", "2", 54, 2);
+            b2.Click += B2_Click;
+            my_panel.Controls.Add(b2);
+            MetroButton b3 = create_btn_keyboard("b3", "3", 106, 2);
+            b3.Click += B3_Click;
+            my_panel.Controls.Add(b3);
+            MetroButton b4 = create_btn_keyboard("b4", "4", 158, 2);
+            b4.Click += B4_Click;
+            my_panel.Controls.Add(b4);
+            MetroButton b5 = create_btn_keyboard("b5", "5", 210, 2);
+            b5.Click += B5_Click;
+            my_panel.Controls.Add(b5);
+            MetroButton b6 = create_btn_keyboard("b6", "6", 262, 2);
+            b6.Click += B6_Click;
+            my_panel.Controls.Add(b6);
+            MetroButton b7 = create_btn_keyboard("b7", "7", 314, 2);
+            b7.Click += B7_Click;
+            my_panel.Controls.Add(b7);
+            MetroButton b8 = create_btn_keyboard("b8", "8", 366, 2);
+            b8.Click += B8_Click;
+            my_panel.Controls.Add(b8);
+            MetroButton b9 = create_btn_keyboard("b9", "9", 2, 54);
+            b9.Click += B9_Click;
+            my_panel.Controls.Add(b9);
+            MetroButton b0 = create_btn_keyboard("b0", "0", 54, 54);
+            b0.Click += B0_Click;
+            my_panel.Controls.Add(b0);
+            MetroButton bSuppr = create_btn_keyboard("Suppr", "Suppr", 106, 54);
+            bSuppr.Click += BSuppr_Click;
+            my_panel.Controls.Add(bSuppr);
+        }
+
         public static void create_keyboard_panel(Panel my_panel)
         {
             MetroButton b1 = create_btn_keyboard("b1", "1", 2, 2);
@@ -185,8 +222,157 @@ namespace POS
             MetroButton bSuppr = create_btn_keyboard("Suppr", "Suppr", 262, 210);
             bSuppr.Click += BSuppr_Click;
             my_panel.Controls.Add(bSuppr);
+            MetroButton bspace = create_btn_keyboard("bspace", "Espace", 314, 210); 
+            bspace.Click += Bspace_Click;
+            my_panel.Controls.Add(bspace);
             
 
+        }
+        public static void create_client_keyboard_panel(Panel my_panel)
+        {
+            MetroButton b1 = create_btn_keyboard("b1", "1", 2, 2);
+            b1.Click += B1_Click;
+            my_panel.Controls.Add(b1);
+            MetroButton b2 = create_btn_keyboard("b2", "2", 54, 2);
+            b2.Click += B2_Click;
+            my_panel.Controls.Add(b2);
+            MetroButton b3 = create_btn_keyboard("b3", "3", 106, 2);
+            b3.Click += B3_Click;
+            my_panel.Controls.Add(b3);
+            MetroButton b4 = create_btn_keyboard("b4", "4", 158, 2);
+            b4.Click += B4_Click;
+            my_panel.Controls.Add(b4);
+            MetroButton b5 = create_btn_keyboard("b5", "5", 210, 2);
+            b5.Click += B5_Click;
+            my_panel.Controls.Add(b5);
+            MetroButton b6 = create_btn_keyboard("b6", "6", 262, 2);
+            b6.Click += B6_Click;
+            my_panel.Controls.Add(b6);
+            MetroButton b7 = create_btn_keyboard("b7", "7", 314, 2);
+            b7.Click += B7_Click;
+            my_panel.Controls.Add(b7);
+            MetroButton b8 = create_btn_keyboard("b8", "8", 366, 2);
+            b8.Click += B8_Click;
+            my_panel.Controls.Add(b8);
+            MetroButton bpoint = create_btn_keyboard("bpoint", ".", 418, 2);
+            bpoint.Click += Bpoint_Click;
+            my_panel.Controls.Add(bpoint);
+            MetroButton b9 = create_btn_keyboard("b9", "9", 2, 54);
+            b9.Click += B9_Click;
+            my_panel.Controls.Add(b9);
+            MetroButton b0 = create_btn_keyboard("b0", "0", 54, 54);
+            b0.Click += B0_Click;
+            my_panel.Controls.Add(b0);
+            MetroButton bA = create_btn_keyboard("bA", "A", 106, 54);
+            bA.Click += BA_Click;
+            my_panel.Controls.Add(bA);
+            MetroButton bZ = create_btn_keyboard("bZ", "Z", 158, 54);
+            bZ.Click += BZ_Click;
+            my_panel.Controls.Add(bZ);
+            MetroButton bE = create_btn_keyboard("bE", "E", 210, 54);
+            bE.Click += BE_Click;
+            my_panel.Controls.Add(bE);
+            MetroButton bR = create_btn_keyboard("bR", "R", 262, 54);
+            bR.Click += BR_Click;
+            my_panel.Controls.Add(bR);
+            MetroButton bT = create_btn_keyboard("bT", "T", 314, 54);
+            bT.Click += BT_Click;
+            my_panel.Controls.Add(bT);
+            MetroButton bY = create_btn_keyboard("bY", "Y", 366, 54);
+            bY.Click += BY_Click;
+            my_panel.Controls.Add(bY);
+            MetroButton bU = create_btn_keyboard("bU", "U", 2, 106);
+            bU.Click += BU_Click;
+            my_panel.Controls.Add(bU);
+            MetroButton bI = create_btn_keyboard("bI", "I", 54, 106);
+            bI.Click += BI_Click;
+            my_panel.Controls.Add(bI);
+            MetroButton bO = create_btn_keyboard("bO", "O", 106, 106);
+            bO.Click += BO_Click;
+            my_panel.Controls.Add(bO);
+            MetroButton bP = create_btn_keyboard("bP", "P", 158, 106);
+            bP.Click += BP_Click;
+            my_panel.Controls.Add(bP);
+            MetroButton bQ = create_btn_keyboard("bQ", "Q", 210, 106);
+            bQ.Click += BQ_Click;
+            my_panel.Controls.Add(bQ);
+            MetroButton bS = create_btn_keyboard("bS", "S", 262, 106);
+            bS.Click += BS_Click;
+            my_panel.Controls.Add(bS);
+            MetroButton bD = create_btn_keyboard("bD", "D", 314, 106);
+            bD.Click += BD_Click;
+            my_panel.Controls.Add(bD);
+            MetroButton bF = create_btn_keyboard("bF", "F", 366, 106);
+            bF.Click += BF_Click;
+            my_panel.Controls.Add(bF);
+            MetroButton bG = create_btn_keyboard("bG", "G", 2, 158);
+            bG.Click += BG_Click;
+            my_panel.Controls.Add(bG);
+            MetroButton bH = create_btn_keyboard("bH", "H", 54, 158);
+            bH.Click += BH_Click;
+            my_panel.Controls.Add(bH);
+            MetroButton bJ = create_btn_keyboard("bJ", "J", 106, 158);
+            bJ.Click += BJ_Click;
+            my_panel.Controls.Add(bJ);
+            MetroButton bK = create_btn_keyboard("bK", "K", 158, 158);
+            bK.Click += BK_Click;
+            my_panel.Controls.Add(bK);
+            MetroButton bL = create_btn_keyboard("bL", "L", 210, 158);
+            bL.Click += BL_Click;
+            my_panel.Controls.Add(bL);
+            MetroButton bM = create_btn_keyboard("bM", "M", 262, 158);
+            bM.Click += BM_Click;
+            my_panel.Controls.Add(bM);
+            MetroButton bW = create_btn_keyboard("bW", "W", 314, 158);
+            bW.Click += BW_Click;
+            my_panel.Controls.Add(bW);
+            MetroButton bX = create_btn_keyboard("bX", "X", 366, 158);
+            bX.Click += BX_Click;
+            my_panel.Controls.Add(bX);
+            MetroButton bC = create_btn_keyboard("bC", "C", 2, 210);
+            bC.Click += BC_Click;
+            my_panel.Controls.Add(bC);
+            MetroButton bV = create_btn_keyboard("bV", "V", 54, 210);
+            bV.Click += BV_Click;
+            my_panel.Controls.Add(bV);
+            MetroButton bB = create_btn_keyboard("bB", "B", 106, 210);
+            bB.Click += BB_Click;
+            my_panel.Controls.Add(bB);
+            MetroButton bN = create_btn_keyboard("bN", "N", 158, 210);
+            bN.Click += BN_Click;
+            my_panel.Controls.Add(bN);
+            CheckBox caps = new CheckBox();
+            caps.Appearance = Appearance.Button;
+            caps.Text = "Verr Maj";
+            caps.Size = new Size(50, 50);
+            caps.Location = new Point(210, 210);
+            caps.Name = "caps";
+            my_panel.Controls.Add(caps);
+            MetroButton bSuppr = create_btn_keyboard("Suppr", "Suppr", 262, 210);
+            bSuppr.Click += BSuppr_Click;
+            my_panel.Controls.Add(bSuppr);
+            MetroButton bspace = create_btn_keyboard("bspace", "Espace", 314, 210);
+            bspace.Click += Bspace_Click;
+            my_panel.Controls.Add(bspace);
+            MetroButton bmail = create_btn_keyboard("bmail", "@", 366, 210);
+            bmail.Click += Bmail_Click;
+            my_panel.Controls.Add(bmail);
+            
+        }
+
+        private static void Bpoint_Click(object sender, EventArgs e)
+        {
+            write_caracter(".");
+        }
+
+        private static void Bmail_Click(object sender, EventArgs e)
+        {
+            write_caracter("@");
+        }
+
+        private static void Bspace_Click(object sender, EventArgs e)
+        {
+            write_caracter(" ");
         }
 
         private static void BN_Click(object sender, EventArgs e)

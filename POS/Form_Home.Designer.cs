@@ -30,53 +30,69 @@
         {
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroPanel_self_employe = new MetroFramework.Controls.MetroPanel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.metroRadioButton_pausse = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton_arrive = new MetroFramework.Controls.MetroRadioButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroPanel_other_employees = new MetroFramework.Controls.MetroPanel();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.metroPanel_save_client_order = new MetroFramework.Controls.MetroPanel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.metroPanel_admin_panel = new MetroFramework.Controls.MetroPanel();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.metroPanel_Paiement = new MetroFramework.Controls.MetroPanel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.metroPanel__gestion_orders = new MetroFramework.Controls.MetroPanel();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
+            this.metroPanel_entrepots = new MetroFramework.Controls.MetroPanel();
+            this.metroLabel_entrepots = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
+            this.metroPanel_deconnecter = new MetroFramework.Controls.MetroPanel();
+            this.metroLabel_deconnecter = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel15 = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox_deconnecter_btn = new System.Windows.Forms.PictureBox();
+            this.pictureBox_deconnecter = new System.Windows.Forms.PictureBox();
+            this.pictureBox_entrepots_btn = new System.Windows.Forms.PictureBox();
+            this.pictureBox_entrepots = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroPanel_self_employe.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.metroPanel_other_employees.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.metroPanel_save_client_order.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.metroPanel_admin_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.metroPanel_Paiement.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.metroPanel__gestion_orders.SuspendLayout();
+            this.metroPanel_entrepots.SuspendLayout();
+            this.metroPanel_deconnecter.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_deconnecter_btn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_deconnecter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_entrepots_btn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_entrepots)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -98,23 +114,13 @@
             this.metroPanel_self_employe.HorizontalScrollbarBarColor = true;
             this.metroPanel_self_employe.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel_self_employe.HorizontalScrollbarSize = 10;
-            this.metroPanel_self_employe.Location = new System.Drawing.Point(48, 75);
+            this.metroPanel_self_employe.Location = new System.Drawing.Point(28, 75);
             this.metroPanel_self_employe.Name = "metroPanel_self_employe";
             this.metroPanel_self_employe.Size = new System.Drawing.Size(220, 250);
             this.metroPanel_self_employe.TabIndex = 2;
             this.metroPanel_self_employe.VerticalScrollbarBarColor = true;
             this.metroPanel_self_employe.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel_self_employe.VerticalScrollbarSize = 10;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::POS.Properties.Resources.select;
-            this.pictureBox7.Location = new System.Drawing.Point(74, 186);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox7.TabIndex = 8;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // metroRadioButton_pausse
             // 
@@ -139,15 +145,6 @@
             this.metroRadioButton_arrive.Text = "J’arrivé à l\'emploi";
             this.metroRadioButton_arrive.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::POS.Properties.Resources.employee;
-            this.pictureBox1.Location = new System.Drawing.Point(46, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // metroPanel_other_employees
             // 
             this.metroPanel_other_employees.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
@@ -158,22 +155,13 @@
             this.metroPanel_other_employees.HorizontalScrollbarBarColor = true;
             this.metroPanel_other_employees.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel_other_employees.HorizontalScrollbarSize = 10;
-            this.metroPanel_other_employees.Location = new System.Drawing.Point(364, 75);
+            this.metroPanel_other_employees.Location = new System.Drawing.Point(276, 75);
             this.metroPanel_other_employees.Name = "metroPanel_other_employees";
             this.metroPanel_other_employees.Size = new System.Drawing.Size(220, 250);
             this.metroPanel_other_employees.TabIndex = 3;
             this.metroPanel_other_employees.VerticalScrollbarBarColor = true;
             this.metroPanel_other_employees.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel_other_employees.VerticalScrollbarSize = 10;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::POS.Properties.Resources.select;
-            this.pictureBox8.Location = new System.Drawing.Point(74, 186);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox8.TabIndex = 9;
-            this.pictureBox8.TabStop = false;
             // 
             // metroLabel3
             // 
@@ -192,15 +180,6 @@
             this.metroLabel2.Size = new System.Drawing.Size(0, 0);
             this.metroLabel2.TabIndex = 1;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::POS.Properties.Resources.employees;
-            this.pictureBox2.Location = new System.Drawing.Point(46, 5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
             // metroPanel_save_client_order
             // 
             this.metroPanel_save_client_order.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
@@ -211,23 +190,13 @@
             this.metroPanel_save_client_order.HorizontalScrollbarBarColor = true;
             this.metroPanel_save_client_order.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel_save_client_order.HorizontalScrollbarSize = 10;
-            this.metroPanel_save_client_order.Location = new System.Drawing.Point(680, 75);
+            this.metroPanel_save_client_order.Location = new System.Drawing.Point(524, 75);
             this.metroPanel_save_client_order.Name = "metroPanel_save_client_order";
             this.metroPanel_save_client_order.Size = new System.Drawing.Size(220, 250);
             this.metroPanel_save_client_order.TabIndex = 4;
             this.metroPanel_save_client_order.VerticalScrollbarBarColor = true;
             this.metroPanel_save_client_order.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel_save_client_order.VerticalScrollbarSize = 10;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::POS.Properties.Resources.select;
-            this.pictureBox9.Location = new System.Drawing.Point(74, 186);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox9.TabIndex = 10;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // metroLabel4
             // 
@@ -246,15 +215,6 @@
             this.metroLabel5.Size = new System.Drawing.Size(0, 0);
             this.metroLabel5.TabIndex = 1;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::POS.Properties.Resources.food;
-            this.pictureBox3.Location = new System.Drawing.Point(46, 5);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
             // metroPanel_admin_panel
             // 
             this.metroPanel_admin_panel.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
@@ -265,23 +225,13 @@
             this.metroPanel_admin_panel.HorizontalScrollbarBarColor = true;
             this.metroPanel_admin_panel.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel_admin_panel.HorizontalScrollbarSize = 10;
-            this.metroPanel_admin_panel.Location = new System.Drawing.Point(48, 350);
+            this.metroPanel_admin_panel.Location = new System.Drawing.Point(28, 350);
             this.metroPanel_admin_panel.Name = "metroPanel_admin_panel";
             this.metroPanel_admin_panel.Size = new System.Drawing.Size(220, 250);
             this.metroPanel_admin_panel.TabIndex = 5;
             this.metroPanel_admin_panel.VerticalScrollbarBarColor = true;
             this.metroPanel_admin_panel.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel_admin_panel.VerticalScrollbarSize = 10;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::POS.Properties.Resources.select;
-            this.pictureBox12.Location = new System.Drawing.Point(74, 186);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox12.TabIndex = 13;
-            this.pictureBox12.TabStop = false;
-            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
             // 
             // metroLabel6
             // 
@@ -300,15 +250,6 @@
             this.metroLabel7.Size = new System.Drawing.Size(0, 0);
             this.metroLabel7.TabIndex = 1;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::POS.Properties.Resources.admin;
-            this.pictureBox4.Location = new System.Drawing.Point(46, 5);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
             // metroPanel_Paiement
             // 
             this.metroPanel_Paiement.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
@@ -319,23 +260,13 @@
             this.metroPanel_Paiement.HorizontalScrollbarBarColor = true;
             this.metroPanel_Paiement.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel_Paiement.HorizontalScrollbarSize = 10;
-            this.metroPanel_Paiement.Location = new System.Drawing.Point(364, 350);
+            this.metroPanel_Paiement.Location = new System.Drawing.Point(276, 350);
             this.metroPanel_Paiement.Name = "metroPanel_Paiement";
             this.metroPanel_Paiement.Size = new System.Drawing.Size(220, 250);
             this.metroPanel_Paiement.TabIndex = 6;
             this.metroPanel_Paiement.VerticalScrollbarBarColor = true;
             this.metroPanel_Paiement.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel_Paiement.VerticalScrollbarSize = 10;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::POS.Properties.Resources.select;
-            this.pictureBox11.Location = new System.Drawing.Point(77, 186);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox11.TabIndex = 12;
-            this.pictureBox11.TabStop = false;
-            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // metroLabel8
             // 
@@ -354,15 +285,6 @@
             this.metroLabel9.Size = new System.Drawing.Size(0, 0);
             this.metroLabel9.TabIndex = 1;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::POS.Properties.Resources.money_bag;
-            this.pictureBox5.Location = new System.Drawing.Point(46, 5);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
-            // 
             // metroPanel__gestion_orders
             // 
             this.metroPanel__gestion_orders.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
@@ -373,22 +295,13 @@
             this.metroPanel__gestion_orders.HorizontalScrollbarBarColor = true;
             this.metroPanel__gestion_orders.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel__gestion_orders.HorizontalScrollbarSize = 10;
-            this.metroPanel__gestion_orders.Location = new System.Drawing.Point(680, 350);
+            this.metroPanel__gestion_orders.Location = new System.Drawing.Point(524, 350);
             this.metroPanel__gestion_orders.Name = "metroPanel__gestion_orders";
             this.metroPanel__gestion_orders.Size = new System.Drawing.Size(220, 250);
             this.metroPanel__gestion_orders.TabIndex = 7;
             this.metroPanel__gestion_orders.VerticalScrollbarBarColor = true;
             this.metroPanel__gestion_orders.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel__gestion_orders.VerticalScrollbarSize = 10;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::POS.Properties.Resources.select;
-            this.pictureBox10.Location = new System.Drawing.Point(74, 186);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox10.TabIndex = 11;
-            this.pictureBox10.TabStop = false;
             // 
             // metroLabel10
             // 
@@ -407,6 +320,121 @@
             this.metroLabel11.Size = new System.Drawing.Size(0, 0);
             this.metroLabel11.TabIndex = 1;
             // 
+            // metroPanel_entrepots
+            // 
+            this.metroPanel_entrepots.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
+            this.metroPanel_entrepots.Controls.Add(this.pictureBox_entrepots_btn);
+            this.metroPanel_entrepots.Controls.Add(this.metroLabel_entrepots);
+            this.metroPanel_entrepots.Controls.Add(this.metroLabel13);
+            this.metroPanel_entrepots.Controls.Add(this.pictureBox_entrepots);
+            this.metroPanel_entrepots.HorizontalScrollbarBarColor = true;
+            this.metroPanel_entrepots.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel_entrepots.HorizontalScrollbarSize = 10;
+            this.metroPanel_entrepots.Location = new System.Drawing.Point(772, 75);
+            this.metroPanel_entrepots.Name = "metroPanel_entrepots";
+            this.metroPanel_entrepots.Size = new System.Drawing.Size(220, 250);
+            this.metroPanel_entrepots.TabIndex = 8;
+            this.metroPanel_entrepots.VerticalScrollbarBarColor = true;
+            this.metroPanel_entrepots.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel_entrepots.VerticalScrollbarSize = 10;
+            // 
+            // metroLabel_entrepots
+            // 
+            this.metroLabel_entrepots.Location = new System.Drawing.Point(5, 148);
+            this.metroLabel_entrepots.Name = "metroLabel_entrepots";
+            this.metroLabel_entrepots.Size = new System.Drawing.Size(210, 19);
+            this.metroLabel_entrepots.TabIndex = 5;
+            this.metroLabel_entrepots.Text = "Entrepôts";
+            this.metroLabel_entrepots.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // metroLabel13
+            // 
+            this.metroLabel13.AutoSize = true;
+            this.metroLabel13.Location = new System.Drawing.Point(40, 136);
+            this.metroLabel13.Name = "metroLabel13";
+            this.metroLabel13.Size = new System.Drawing.Size(0, 0);
+            this.metroLabel13.TabIndex = 1;
+            // 
+            // metroPanel_deconnecter
+            // 
+            this.metroPanel_deconnecter.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
+            this.metroPanel_deconnecter.Controls.Add(this.pictureBox_deconnecter_btn);
+            this.metroPanel_deconnecter.Controls.Add(this.metroLabel_deconnecter);
+            this.metroPanel_deconnecter.Controls.Add(this.metroLabel15);
+            this.metroPanel_deconnecter.Controls.Add(this.pictureBox_deconnecter);
+            this.metroPanel_deconnecter.HorizontalScrollbarBarColor = true;
+            this.metroPanel_deconnecter.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel_deconnecter.HorizontalScrollbarSize = 10;
+            this.metroPanel_deconnecter.Location = new System.Drawing.Point(772, 350);
+            this.metroPanel_deconnecter.Name = "metroPanel_deconnecter";
+            this.metroPanel_deconnecter.Size = new System.Drawing.Size(220, 250);
+            this.metroPanel_deconnecter.TabIndex = 9;
+            this.metroPanel_deconnecter.VerticalScrollbarBarColor = true;
+            this.metroPanel_deconnecter.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel_deconnecter.VerticalScrollbarSize = 10;
+            // 
+            // metroLabel_deconnecter
+            // 
+            this.metroLabel_deconnecter.Location = new System.Drawing.Point(5, 148);
+            this.metroLabel_deconnecter.Name = "metroLabel_deconnecter";
+            this.metroLabel_deconnecter.Size = new System.Drawing.Size(210, 19);
+            this.metroLabel_deconnecter.TabIndex = 5;
+            this.metroLabel_deconnecter.Text = "Déconnecter";
+            this.metroLabel_deconnecter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // metroLabel15
+            // 
+            this.metroLabel15.AutoSize = true;
+            this.metroLabel15.Location = new System.Drawing.Point(40, 136);
+            this.metroLabel15.Name = "metroLabel15";
+            this.metroLabel15.Size = new System.Drawing.Size(0, 0);
+            this.metroLabel15.TabIndex = 1;
+            // 
+            // pictureBox_deconnecter_btn
+            // 
+            this.pictureBox_deconnecter_btn.Image = global::POS.Properties.Resources.select;
+            this.pictureBox_deconnecter_btn.Location = new System.Drawing.Point(74, 186);
+            this.pictureBox_deconnecter_btn.Name = "pictureBox_deconnecter_btn";
+            this.pictureBox_deconnecter_btn.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_deconnecter_btn.TabIndex = 10;
+            this.pictureBox_deconnecter_btn.TabStop = false;
+            // 
+            // pictureBox_deconnecter
+            // 
+            this.pictureBox_deconnecter.Image = global::POS.Properties.Resources.exit;
+            this.pictureBox_deconnecter.Location = new System.Drawing.Point(46, 5);
+            this.pictureBox_deconnecter.Name = "pictureBox_deconnecter";
+            this.pictureBox_deconnecter.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox_deconnecter.TabIndex = 0;
+            this.pictureBox_deconnecter.TabStop = false;
+            // 
+            // pictureBox_entrepots_btn
+            // 
+            this.pictureBox_entrepots_btn.Image = global::POS.Properties.Resources.select;
+            this.pictureBox_entrepots_btn.Location = new System.Drawing.Point(74, 186);
+            this.pictureBox_entrepots_btn.Name = "pictureBox_entrepots_btn";
+            this.pictureBox_entrepots_btn.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_entrepots_btn.TabIndex = 10;
+            this.pictureBox_entrepots_btn.TabStop = false;
+            // 
+            // pictureBox_entrepots
+            // 
+            this.pictureBox_entrepots.Image = global::POS.Properties.Resources.warehouse;
+            this.pictureBox_entrepots.Location = new System.Drawing.Point(46, 5);
+            this.pictureBox_entrepots.Name = "pictureBox_entrepots";
+            this.pictureBox_entrepots.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox_entrepots.TabIndex = 0;
+            this.pictureBox_entrepots.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::POS.Properties.Resources.select;
+            this.pictureBox10.Location = new System.Drawing.Point(74, 186);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox10.TabIndex = 11;
+            this.pictureBox10.TabStop = false;
+            // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::POS.Properties.Resources.customer_service;
@@ -416,11 +444,107 @@
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
             // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::POS.Properties.Resources.select;
+            this.pictureBox11.Location = new System.Drawing.Point(77, 186);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox11.TabIndex = 12;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::POS.Properties.Resources.money_bag;
+            this.pictureBox5.Location = new System.Drawing.Point(46, 5);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::POS.Properties.Resources.select;
+            this.pictureBox12.Location = new System.Drawing.Point(74, 186);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox12.TabIndex = 13;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::POS.Properties.Resources.admin;
+            this.pictureBox4.Location = new System.Drawing.Point(46, 5);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::POS.Properties.Resources.select;
+            this.pictureBox9.Location = new System.Drawing.Point(74, 186);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox9.TabIndex = 10;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::POS.Properties.Resources.food;
+            this.pictureBox3.Location = new System.Drawing.Point(46, 5);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::POS.Properties.Resources.select;
+            this.pictureBox8.Location = new System.Drawing.Point(74, 186);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox8.TabIndex = 9;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::POS.Properties.Resources.employees;
+            this.pictureBox2.Location = new System.Drawing.Point(46, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::POS.Properties.Resources.select;
+            this.pictureBox7.Location = new System.Drawing.Point(74, 186);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox7.TabIndex = 8;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::POS.Properties.Resources.employee;
+            this.pictureBox1.Location = new System.Drawing.Point(46, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1024, 676);
+            this.ClientSize = new System.Drawing.Size(1024, 715);
+            this.Controls.Add(this.metroPanel_deconnecter);
+            this.Controls.Add(this.metroPanel_entrepots);
             this.Controls.Add(this.metroPanel__gestion_orders);
             this.Controls.Add(this.metroPanel_Paiement);
             this.Controls.Add(this.metroPanel_admin_panel);
@@ -432,28 +556,36 @@
             this.Load += new System.EventHandler(this.Form_Home_Load);
             this.metroPanel_self_employe.ResumeLayout(false);
             this.metroPanel_self_employe.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.metroPanel_other_employees.ResumeLayout(false);
             this.metroPanel_other_employees.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.metroPanel_save_client_order.ResumeLayout(false);
             this.metroPanel_save_client_order.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.metroPanel_admin_panel.ResumeLayout(false);
             this.metroPanel_admin_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.metroPanel_Paiement.ResumeLayout(false);
             this.metroPanel_Paiement.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.metroPanel__gestion_orders.ResumeLayout(false);
             this.metroPanel__gestion_orders.PerformLayout();
+            this.metroPanel_entrepots.ResumeLayout(false);
+            this.metroPanel_entrepots.PerformLayout();
+            this.metroPanel_deconnecter.ResumeLayout(false);
+            this.metroPanel_deconnecter.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_deconnecter_btn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_deconnecter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_entrepots_btn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_entrepots)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -491,5 +623,15 @@
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
+        private MetroFramework.Controls.MetroPanel metroPanel_entrepots;
+        private System.Windows.Forms.PictureBox pictureBox_entrepots_btn;
+        private MetroFramework.Controls.MetroLabel metroLabel_entrepots;
+        private MetroFramework.Controls.MetroLabel metroLabel13;
+        private System.Windows.Forms.PictureBox pictureBox_entrepots;
+        private MetroFramework.Controls.MetroPanel metroPanel_deconnecter;
+        private System.Windows.Forms.PictureBox pictureBox_deconnecter_btn;
+        private MetroFramework.Controls.MetroLabel metroLabel_deconnecter;
+        private MetroFramework.Controls.MetroLabel metroLabel15;
+        private System.Windows.Forms.PictureBox pictureBox_deconnecter;
     }
 }

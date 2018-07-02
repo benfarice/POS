@@ -70,7 +70,7 @@
             this.metroPanel2.HorizontalScrollbarBarColor = true;
             this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel2.HorizontalScrollbarSize = 10;
-            this.metroPanel2.Location = new System.Drawing.Point(407, 25);
+            this.metroPanel2.Location = new System.Drawing.Point(528, 159);
             this.metroPanel2.Name = "metroPanel2";
             this.metroPanel2.Size = new System.Drawing.Size(345, 180);
             this.metroPanel2.TabIndex = 1;
@@ -93,9 +93,9 @@
             this.metroRadioButton_password.AutoSize = true;
             this.metroRadioButton_password.Location = new System.Drawing.Point(229, 145);
             this.metroRadioButton_password.Name = "metroRadioButton_password";
-            this.metroRadioButton_password.Size = new System.Drawing.Size(94, 15);
+            this.metroRadioButton_password.Size = new System.Drawing.Size(82, 15);
             this.metroRadioButton_password.TabIndex = 13;
-            this.metroRadioButton_password.Text = "Mot De Passe";
+            this.metroRadioButton_password.Text = "Votre Code";
             this.metroRadioButton_password.UseVisualStyleBackColor = true;
             // 
             // metroLabel3
@@ -103,9 +103,9 @@
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.Location = new System.Drawing.Point(3, 99);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(89, 19);
+            this.metroLabel3.Size = new System.Drawing.Size(77, 19);
             this.metroLabel3.TabIndex = 7;
-            this.metroLabel3.Text = "Mot De Passe";
+            this.metroLabel3.Text = "Votre Code";
             // 
             // metroRadioButton_Votre_ID
             // 
@@ -174,7 +174,7 @@
             this.metroPanel3.HorizontalScrollbarBarColor = true;
             this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel3.HorizontalScrollbarSize = 10;
-            this.metroPanel3.Location = new System.Drawing.Point(407, 211);
+            this.metroPanel3.Location = new System.Drawing.Point(528, 345);
             this.metroPanel3.Name = "metroPanel3";
             this.metroPanel3.Size = new System.Drawing.Size(345, 201);
             this.metroPanel3.TabIndex = 2;
@@ -284,7 +284,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::POS.Properties.Resources.coffee_shop__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(145, 25);
+            this.pictureBox1.Location = new System.Drawing.Point(112, 159);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(256, 256);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -295,7 +295,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1024, 676);
+            this.ClientSize = new System.Drawing.Size(1024, 715);
             this.Controls.Add(this.metroPanel3);
             this.Controls.Add(this.metroPanel2);
             this.Controls.Add(this.pictureBox1);
